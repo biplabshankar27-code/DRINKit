@@ -66,6 +66,11 @@ Without a key the assistant still works using a built-in fallback recommendation
 | AI Assistant | `POST /assistant/chat`, `GET/DELETE /assistant/chat/history` |
 | Payments | `POST /payments/create-payment`, `POST /payments/verify` (mock) |
 | Live tracking | socket.io namespace `/tracking` → event `order:status` |
+| Admin | `GET /orders/admin/all`, `PATCH /orders/admin/:id/status`, product CRUD under `/catalog/admin/*` (admin role enforced) |
+
+## Admin dashboard
+
+Log into the web app with `admin@drinkit.dev / Admin@123` and open `/admin` — product list with stock bumping, new-product form, and order status management (updates push live to the customer's tracking page via socket.io).
 
 ## Setup — Frontend
 

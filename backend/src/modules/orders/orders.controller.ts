@@ -1,8 +1,10 @@
-import { Body, Controller, Get, Param, Patch, Post, Query, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Param, Patch, Post, UseGuards } from '@nestjs/common';
 import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
-import { CurrentUser } from '../../common/decorators/current-user.decorator';
+import { RolesGuard } from '../../common/guards/roles.guard';
+import { CurrentUser, Roles } from '../../common/decorators/current-user.decorator';
 import { OrdersService, ORDER_STATUSES } from './orders.service';
 import { CreateOrderDto } from './dto/create-order.dto';
+import { BadRequestException } from '@nestjs/common';
 import { IsOptional, IsString, MaxLength } from 'class-validator';
 
 class AdminStatusDto {
@@ -13,7 +15,7 @@ class AdminStatusDto {
   deliveryAgent?: string;
 }
 
-@UseGuards(JwtAuthGuard)
+@UseGuards(JwtAuthGuard, RolesGuard)
 @Controller('orders')
 export class OrdersController {
   constructor(private readonly orders: OrdersService) {}
@@ -28,6 +30,12 @@ export class OrdersController {
     return this.orders.listForUser(userId);
   }
 
+  @Get('admin/all')
+  @Roles('admin')
+  listAll() {
+    return this.orders.listAll();
+  }
+
   @Get(':id')
   get(@CurrentUser('sub') userId: string, @Param('id') id: string) {
     return this.orders.get(userId, id);
@@ -38,12 +46,12 @@ export class OrdersController {
     return this.orders.cancel(userId, id);
   }
 
-  // simplified admin endpoint for MVP order management
   @Patch('admin/:id/status')
+  @Roles('admin')
   updateStatus(@Param('id') id: string, @Body() dto: AdminStatusDto) {
     const status = ORDER_STATUSES.find((s) => s === dto.status);
     if (!status) {
-      throw new Error(`Invalid status. Allowed: ${ORDER_STATUSES.join(', ')}`);
+      throw new BadRequestException(`Invalid status. Allowed: ${ORDER_STATUSES.join(', ')}`);
     }
     return this.orders.updateStatus(id, status, dto.deliveryAgent);
   }
