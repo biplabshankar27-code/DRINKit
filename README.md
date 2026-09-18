@@ -1,0 +1,84 @@
+# DRINKit
+
+Liquor delivery platform with an integrated AI sommelier. Web app (Next.js) + backend (NestJS), PostgreSQL + MongoDB, AI assistant powered by xAI Grok.
+
+## Structure
+
+```
+backend/    NestJS API (auth, catalog, cart, orders, inventory, recommendations, AI assistant, payments, socket.io tracking)
+frontend/   Next.js 16 App Router web app (Tailwind CSS, Zustand, dark liquor theme)
+seed/       (inside backend) 67 products, cocktail recipes, knowledge docs, demo users
+```
+
+## Prerequisites
+
+- Node.js 18+
+- PostgreSQL running (default: `postgres://postgres:postgres@localhost:5432/drinkit`)
+- MongoDB running (default: `mongodb://localhost:27017/drinkit`)
+
+## Setup — Backend
+
+```bash
+cd backend
+npm install
+cp .env.example .env        # edit values below
+npx prisma db push          # create Postgres tables
+npm run seed                # seed Mongo (products/cocktails) + Postgres (users, addresses)
+npm run start:dev           # API on http://localhost:4000/api — Swagger at http://localhost:4000/docs
+```
+
+Key env vars (backend/.env):
+
+```env
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/drinkit?schema=public
+MONGODB_URI=mongodb://localhost:27017/drinkit
+JWT_SECRET=some-long-random-string
+XAI_API_KEY=            # required for real AI chat
+XAI_MODEL=grok-3-mini   # or grok-4 / latest
+```
+
+### Getting an xAI API key
+
+1. Go to https://console.x.ai and sign in with your X account.
+2. Create an API key.
+3. Put it in `backend/.env` as `XAI_API_KEY=...`.
+
+Without a key the assistant still works using a built-in fallback recommendation engine.
+
+### Demo accounts (after seeding)
+
+| Account | Email | Password |
+|---|---|---|
+| Admin | admin@drinkit.dev | Admin@123 |
+| Customer | demo@drinkit.dev | Demo@123 |
+
+### API modules
+
+| Module | Endpoints |
+|---|---|
+| Auth | `POST /auth/register`, `POST /auth/login`, `GET /auth/profile` |
+| Users | `GET /users/me`, addresses CRUD under `/users/me/addresses` |
+| Catalog | `GET /catalog/products` (search/filter/sort/paginate), `GET /catalog/categories`, `GET /catalog/products/:id`, admin CRUD under `/catalog/admin/*` |
+| Cart | `GET /cart`, `POST/PATCH /cart/items`, `DELETE /cart/items` |
+| Orders | `POST /orders`, `GET /orders`, `GET /orders/:id`, `POST /orders/:id/cancel`, `PATCH /orders/admin/:id/status` |
+| Inventory | `POST /inventory/check-availability` |
+| Recommendations | `GET /recommendations/for-you`, `/recommendations/similar/:productId`, `/recommendations/popular` |
+| AI Assistant | `POST /assistant/chat`, `GET/DELETE /assistant/chat/history` |
+| Payments | `POST /payments/create-payment`, `POST /payments/verify` (mock) |
+| Live tracking | socket.io namespace `/tracking` → event `order:status` |
+
+## Setup — Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev                # http://localhost:3000
+```
+
+Optional env: `NEXT_PUBLIC_API_URL=http://localhost:4000/api`, `NEXT_PUBLIC_WS_URL=http://localhost:4000`.
+
+## Notes
+
+- AI chat is OpenAI-SDK compatible: `baseURL: https://api.x.ai/v1`, `apiKey: $XAI_API_KEY` (see `backend/src/modules/ai-assistant/ai-assistant.service.ts`).
+- Payments are mocked for the MVP; Razorpay wiring point is `backend/src/modules/payments/payments.service.ts`.
+- Never commit `.env` or key files.
