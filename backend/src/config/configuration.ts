@@ -15,7 +15,7 @@ export const appConfig = (): AppConfig => ({
   jwtExpiresIn: process.env.JWT_EXPIRES_IN ?? '7d',
   groqApiKey: process.env.GROQ_API_KEY,
   groqBaseUrl: process.env.GROQ_BASE_URL ?? 'https://api.groq.com/openai/v1',
-  groqModel: process.env.GROQ_MODEL ?? 'llama-3.3-70b-versatile',
+  groqModel: process.env.GROQ_MODEL ?? 'openai/gpt-oss-120b',
   razorpayKeyId: process.env.RAZORPAY_KEY_ID,
   razorpayKeySecret: process.env.RAZORPAY_KEY_SECRET,
 });

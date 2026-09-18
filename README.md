@@ -34,7 +34,7 @@ DATABASE_URL=postgresql://postgres:postgres@localhost:5432/drinkit?schema=public
 MONGODB_URI=mongodb://localhost:27017/drinkit
 JWT_SECRET=some-long-random-string
 GROQ_API_KEY=                       # required for real AI chat
-GROQ_MODEL=llama-3.3-70b-versatile  # or llama-3.1-8b-instant (faster/cheaper)
+GROQ_MODEL=openai/gpt-oss-120b  # or llama-3.1-8b-instant (faster/cheaper)
 ```
 
 ### Getting a Groq API key
@@ -84,6 +84,6 @@ Optional env: `NEXT_PUBLIC_API_URL=http://localhost:4000/api`, `NEXT_PUBLIC_WS_U
 
 ## Notes
 
-- AI chat is OpenAI-SDK compatible: `baseURL: https://api.groq.com/openai/v1`, `apiKey: $GROQ_API_KEY`, model `llama-3.3-70b-versatile` (see `backend/src/modules/ai-assistant/ai-assistant.service.ts`).
+- AI chat is OpenAI-SDK compatible: `baseURL: https://api.groq.com/openai/v1`, `apiKey: $GROQ_API_KEY`, model `openai/gpt-oss-120b` (see `backend/src/modules/ai-assistant/ai-assistant.service.ts`).
 - Payments are mocked for the MVP; Razorpay wiring point is `backend/src/modules/payments/payments.service.ts`.
 - Never commit `.env` or key files.
