@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.next/
+.env
+*.log
+.DS_Store
+
+drinkit keys.txt
+*.keys.txt
+keys.txt
