@@ -79,6 +79,18 @@ export class CatalogService {
     return this.productModel.findById(id).exec();
   }
 
+  async findByIds(ids: string[]): Promise<{ items: ProductDocument[] }> {
+    const validIds = ids.filter((id) => Types.ObjectId.isValid(id));
+    if (validIds.length === 0) return { items: [] };
+    const items = await this.productModel.find({ _id: { $in: validIds } }).exec();
+    const map = new Map(items.map((item) => [String(item._id), item]));
+    const ordered = validIds.flatMap((id) => {
+      const item = map.get(id);
+      return item ? [item] : [];
+    });
+    return { items: ordered };
+  }
+
   async listCategories(): Promise<CategoryDto[]> {
     const counts = await this.productModel.aggregate<{ _id: string; count: number }>([
       { $match: { isActive: true } },

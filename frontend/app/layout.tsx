@@ -21,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/catalog" className="hover:text-amber-200">Catalog</Link>
               <Link href="/chat" className="hover:text-amber-200">Sommelier</Link>
               <Link href="/orders" className="hover:text-amber-200">Orders</Link>
+              <Link href="/wishlist" className="hover:text-amber-200">Wishlist</Link>
               <Link href="/cart" className="hover:text-amber-200">Cart</Link>
               <AuthNav />
             </nav>

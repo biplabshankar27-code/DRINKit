@@ -1,6 +1,6 @@
 # DRINKit
 
-Liquor delivery platform with an integrated AI sommelier. Web app (Next.js) + backend (NestJS), PostgreSQL + MongoDB, AI assistant powered by xAI Grok.
+Liquor delivery platform with an integrated AI sommelier. Web app (Next.js) + backend (NestJS), PostgreSQL + MongoDB, AI assistant powered by Groq (Llama 3.3 70B).
 
 ## Structure
 
@@ -33,15 +33,15 @@ Key env vars (backend/.env):
 DATABASE_URL=postgresql://postgres:postgres@localhost:5432/drinkit?schema=public
 MONGODB_URI=mongodb://localhost:27017/drinkit
 JWT_SECRET=some-long-random-string
-XAI_API_KEY=            # required for real AI chat
-XAI_MODEL=grok-3-mini   # or grok-4 / latest
+GROQ_API_KEY=                       # required for real AI chat
+GROQ_MODEL=llama-3.3-70b-versatile  # or llama-3.1-8b-instant (faster/cheaper)
 ```
 
-### Getting an xAI API key
+### Getting a Groq API key
 
-1. Go to https://console.x.ai and sign in with your X account.
-2. Create an API key.
-3. Put it in `backend/.env` as `XAI_API_KEY=...`.
+1. Go to https://console.groq.com and sign in.
+2. Create an API key (Dashboard → API Keys → Create API Key).
+3. Put it in `backend/.env` as `GROQ_API_KEY=...`.
 
 Without a key the assistant still works using a built-in fallback recommendation engine.
 
@@ -79,6 +79,6 @@ Optional env: `NEXT_PUBLIC_API_URL=http://localhost:4000/api`, `NEXT_PUBLIC_WS_U
 
 ## Notes
 
-- AI chat is OpenAI-SDK compatible: `baseURL: https://api.x.ai/v1`, `apiKey: $XAI_API_KEY` (see `backend/src/modules/ai-assistant/ai-assistant.service.ts`).
+- AI chat is OpenAI-SDK compatible: `baseURL: https://api.groq.com/openai/v1`, `apiKey: $GROQ_API_KEY`, model `llama-3.3-70b-versatile` (see `backend/src/modules/ai-assistant/ai-assistant.service.ts`).
 - Payments are mocked for the MVP; Razorpay wiring point is `backend/src/modules/payments/payments.service.ts`.
 - Never commit `.env` or key files.

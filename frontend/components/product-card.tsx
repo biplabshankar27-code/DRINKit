@@ -5,15 +5,26 @@ import { useState } from 'react';
 import { api, apiMessage } from '@/lib/api';
 import { useAuthStore } from '@/store/auth';
 import { useCartStore } from '@/store/cart';
+import { useWishlistStore } from '@/store/wishlist';
 import type { CartTotals, Product } from '@/lib/types';
 
 export function ProductCard({ product, onAdd }: { product: Product; onAdd?: (line: { productId: string }) => void }) {
   const token = useAuthStore((s) => s.token);
   const cart = useCartStore((s) => s.cart);
   const setCart = useCartStore((s) => s.setCart);
+  const wishlisted = useWishlistStore((s) => s.productIds.includes(product._id));
+  const toggleWishlist = useWishlistStore((s) => s.toggle);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const outOfStock = product.stock <= 0;
+
+  const onWishlistToggle = async () => {
+    if (!token) {
+      window.location.href = '/login';
+      return;
+    }
+    await toggleWishlist(product._id);
+  };
 
   const addToCart = async () => {
     if (!token) {
@@ -43,6 +54,15 @@ export function ProductCard({ product, onAdd }: { product: Product; onAdd?: (lin
             Out of stock
           </span>
         )}
+        <button
+          onClick={onWishlistToggle}
+          aria-label={wishlisted ? 'Remove from wishlist' : 'Add to wishlist'}
+          className={`absolute top-3 right-3 flex h-9 w-9 items-center justify-center rounded-full bg-black/70 text-lg transition hover:bg-black/90 ${
+            wishlisted ? 'text-red-400' : 'text-neutral-300'
+          }`}
+        >
+          {wishlisted ? '♥' : '♡'}
+        </button>
       </Link>
       <div className="flex flex-1 flex-col gap-2 p-4">
         <div className="flex items-center justify-between text-xs text-neutral-400">

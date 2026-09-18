@@ -6,6 +6,34 @@ import { api, apiMessage } from '@/lib/api';
 import type { Product } from '@/lib/types';
 import { ProductCard } from '@/components/product-card';
 import { CartButton } from '@/components/cart-button';
+import { useAuthStore } from '@/store/auth';
+import { useWishlistStore } from '@/store/wishlist';
+
+function WishlistButton({ productId }: { productId: string }) {
+  const token = useAuthStore((s) => s.token);
+  const wishlisted = useWishlistStore((s) => s.productIds.includes(productId));
+  const toggleWishlist = useWishlistStore((s) => s.toggle);
+
+  const onToggle = async () => {
+    if (!token) {
+      window.location.href = '/login';
+      return;
+    }
+    await toggleWishlist(productId);
+  };
+
+  return (
+    <button
+      onClick={onToggle}
+      aria-label={wishlisted ? 'Remove from wishlist' : 'Add to wishlist'}
+      className={`btn h-10 border border-white/10 px-4 ${
+        wishlisted ? 'bg-red-500/15 text-red-300' : 'text-neutral-300'
+      }`}
+    >
+      {wishlisted ? '♥ Wishlisted' : '♡ Wishlist'}
+    </button>
+  );
+}
 
 export default function ProductPage() {
   const { id } = useParams<{ id: string }>();
@@ -57,7 +85,12 @@ export default function ProductPage() {
               {product.stock > 0 ? <span className="text-emerald-400">In stock ({product.stock})</span> : <span className="text-red-400">Out of stock</span>}
             </p>
           </div>
-          <CartButton product={product} />
+          <div className="flex items-center gap-3">
+            <CartButton product={product} />
+          </div>
+          <div className="flex">
+            <WishlistButton productId={product._id} />
+          </div>
         </div>
       </div>
 

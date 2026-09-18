@@ -1,7 +1,7 @@
-import { IsMongoId, IsOptional, IsString, MaxLength, MinLength } from 'class-validator';
+import { IsOptional, IsString, IsUUID, MaxLength } from 'class-validator';
 
 export class CreateOrderDto {
-  @IsMongoId()
+  @IsUUID()
   addressId!: string;
 
   @IsOptional() @IsString() @MaxLength(255)

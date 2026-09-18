@@ -1,4 +1,4 @@
-﻿import * as mongoose from 'mongoose';
+﻿import mongoose from 'mongoose';
 import { PrismaClient } from '@prisma/client';
 
 interface ProductSeed {
@@ -449,8 +449,7 @@ async function main(): Promise<void> {
   const prisma = new PrismaClient();
 
   try {
-    const db = mongoose.connection.db;
-    if (!db) throw new Error('Mongo connection failed');
+    const db = mongoose.connection.getClient().db('drinkit');
 
     await db.dropCollection('products').catch(() => undefined);
     await db.dropCollection('cocktail_recipes').catch(() => undefined);

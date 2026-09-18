@@ -17,6 +17,12 @@ export class CatalogController {
     return this.catalog.listCategories();
   }
 
+  @Get('products/by-ids')
+  async findByIds(@Query('ids') ids: string | undefined) {
+    const list = (ids ?? '').split(',').map((id) => id.trim()).filter(Boolean);
+    return this.catalog.findByIds(list);
+  }
+
   @Get('products/:id')
   async getById(@Param('id') id: string) {
     const product = await this.catalog.getById(id);

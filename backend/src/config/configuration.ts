@@ -2,9 +2,9 @@ export interface AppConfig {
   port: number;
   jwtSecret: string;
   jwtExpiresIn: string;
-  xaiApiKey?: string;
-  xaiBaseUrl: string;
-  xaiModel: string;
+  groqApiKey?: string;
+  groqBaseUrl: string;
+  groqModel: string;
   razorpayKeyId?: string;
   razorpayKeySecret?: string;
 }
@@ -13,9 +13,9 @@ export const appConfig = (): AppConfig => ({
   port: Number(process.env.PORT ?? 4000),
   jwtSecret: process.env.JWT_SECRET ?? 'dev-secret',
   jwtExpiresIn: process.env.JWT_EXPIRES_IN ?? '7d',
-  xaiApiKey: process.env.XAI_API_KEY,
-  xaiBaseUrl: process.env.XAI_BASE_URL ?? 'https://api.x.ai/v1',
-  xaiModel: process.env.XAI_MODEL ?? 'grok-3-mini',
+  groqApiKey: process.env.GROQ_API_KEY,
+  groqBaseUrl: process.env.GROQ_BASE_URL ?? 'https://api.groq.com/openai/v1',
+  groqModel: process.env.GROQ_MODEL ?? 'llama-3.3-70b-versatile',
   razorpayKeyId: process.env.RAZORPAY_KEY_ID,
   razorpayKeySecret: process.env.RAZORPAY_KEY_SECRET,
 });

@@ -37,10 +37,10 @@ export class AiAssistantService {
     private readonly recs: RecommendationsService,
   ) {
     const cfg = appConfig();
-    if (cfg.xaiApiKey) {
-      this.client = new OpenAI({ apiKey: cfg.xaiApiKey, baseURL: cfg.xaiBaseUrl });
+    if (cfg.groqApiKey) {
+      this.client = new OpenAI({ apiKey: cfg.groqApiKey, baseURL: cfg.groqBaseUrl });
     } else {
-      this.logger.warn('XAI_API_KEY not set â€” AI assistant will use the fallback recommendation engine');
+      this.logger.warn('GROQ_API_KEY not set â€” AI assistant will use the fallback recommendation engine');
     }
   }
 
@@ -50,7 +50,7 @@ export class AiAssistantService {
     let reply: string;
     let modelIds: string[] = [];
 
-    if (appConfig().xaiApiKey) {
+    if (appConfig().groqApiKey) {
       const catalogContext = await this.buildCatalogContext(message);
       const history: ChatMessage[] = session.messages.slice(-HISTORY_LIMIT);
 
@@ -66,7 +66,7 @@ export class AiAssistantService {
 
       try {
         const completion = await this.client!.chat.completions.create({
-          model: appConfig().xaiModel,
+          model: appConfig().groqModel,
           messages,
           temperature: 0.7,
           max_tokens: 700,
@@ -76,7 +76,7 @@ export class AiAssistantService {
         reply = parsed.text;
         modelIds = parsed.ids;
       } catch (error) {
-        this.logger.error(`xAI chat failed: ${String(error)}`);
+        this.logger.error(`Groq chat failed: ${String(error)}`);
         reply = await this.fallbackReply(userId, message);
       }
     } else {

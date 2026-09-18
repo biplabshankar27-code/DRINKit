@@ -1,5 +1,5 @@
 # DRINKit — Intelligent Liquor Delivery & AI Sommelier Platform
-### OpenCode Project Specification
+### OpenCode Project Specification (Updated — Groq Edition)
 
 ---
 
@@ -43,12 +43,16 @@
 - **Vector DB:** pgvector (PostgreSQL extension) or Pinecone (for AI embeddings)
 
 ### AI Layer
-- **LLM:** Grok (xAI) — Primary model via official API
+- **LLM Provider:** Groq
+- **API Base URL:** `https://api.groq.com/openai/v1`
 - **Framework:** LangChain or LlamaIndex (OpenAI-compatible client)
-- **Embeddings:** Use OpenAI-compatible embeddings or alternative (e.g. Voyage, Cohere, or local) if needed. Grok API is OpenAI-compatible.
+- **Embeddings:** Use OpenAI-compatible embeddings or alternative (e.g. Voyage, Cohere, or local) if needed
 - **RAG:** Retrieval-Augmented Generation over liquor knowledge base
-- **API Base URL:** `https://api.x.ai/v1`
-- **Recommended Models:** `grok-4`, `grok-4.6`, `grok-3-mini` (or latest available)
+- **Recommended Models:**
+  - `llama-3.3-70b-versatile` (best quality)
+  - `llama-3.1-8b-instant` (fastest / cheapest)
+  - `mixtral-8x7b-32768` (long context)
+  - `gemma2-9b-it` (solid alternative)
 
 ### Other Services
 - **Payments:** Razorpay (India) or Stripe
@@ -165,14 +169,25 @@ drinkit/
    - Embed product data + knowledge articles
    - Retrieve relevant chunks based on user query
    - Pass to LLM with system prompt
-3. Use **Grok (xAI)** as the primary LLM via the official API (`https://api.x.ai/v1`).
-   - The API is OpenAI-compatible — you can use the official OpenAI SDK by simply changing the `baseURL` and API key.
+3. Use **Groq** as the primary LLM via the official OpenAI-compatible API (`https://api.groq.com/openai/v1`).
+   - You can use the official OpenAI SDK by simply changing the `baseURL` and API key.
 4. System Prompt should position the AI as a friendly, knowledgeable sommelier.
 5. The AI must be able to:
    - Answer general questions
    - Recommend specific products from the current catalog
    - Respect availability (only recommend in-stock items)
 6. Store chat history per user for context.
+
+**Example client setup:**
+
+```ts
+import OpenAI from "openai";
+
+const groq = new OpenAI({
+  apiKey: process.env.GROQ_API_KEY,
+  baseURL: "https://api.groq.com/openai/v1",
+});
+```
 
 ---
 
@@ -220,7 +235,7 @@ drinkit/
 - Payment integration (test mode)
 
 ### Phase 3 — AI Assistant
-- Set up LLM integration
+- Set up Groq LLM integration
 - Build knowledge base + embeddings
 - Chat API + frontend chat UI
 - Connect AI responses to product recommendations
@@ -260,9 +275,11 @@ MONGODB_URI=
 REDIS_URL=
 JWT_SECRET=
 
-# AI (Grok / xAI)
-XAI_API_KEY=
-XAI_BASE_URL=https://api.x.ai/v1
+# AI (Groq)
+GROQ_API_KEY=
+GROQ_BASE_URL=https://api.groq.com/openai/v1
+GROQ_MODEL=llama-3.3-70b-versatile
+
 # Optional: fallback embedding model if needed
 EMBEDDING_MODEL=text-embedding-3-small
 
@@ -310,9 +327,10 @@ CLOUDINARY_API_SECRET=
 1. Start by setting up the backend with NestJS (or Express) + PostgreSQL + MongoDB.
 2. Create the product catalog module first with proper seeding.
 3. Build the AI Assistant module early (it is the unique selling point).
-4. Use **Grok (xAI)** as the default LLM. Configure the OpenAI SDK (or LangChain) with:
-   - `baseURL: "https://api.x.ai/v1"`
-   - `apiKey: process.env.XAI_API_KEY`
+4. Use **Groq** as the default LLM. Configure the OpenAI SDK (or LangChain) with:
+   - `baseURL: "https://api.groq.com/openai/v1"`
+   - `apiKey: process.env.GROQ_API_KEY`
+   - Preferred model: `llama-3.3-70b-versatile`
 5. Build the frontend as a **web-only** Next.js application (no React Native).
 6. Use Tailwind CSS + shadcn/ui for a clean, modern UI.
 7. Keep the frontend focused on core user flows and make it fully responsive.
@@ -321,7 +339,7 @@ CLOUDINARY_API_SECRET=
 10. Prefer simple and working solutions over over-engineering in the MVP.
 11. Add proper TypeScript types everywhere.
 12. Include basic error handling and validation.
-13. Generate a clear README with setup instructions (including how to get an xAI API key from console.x.ai).
+13. Generate a clear README with setup instructions (including how to get a Groq API key from console.groq.com).
 
 ---
 

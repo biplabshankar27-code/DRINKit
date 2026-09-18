@@ -9,7 +9,13 @@ import { PassportModule } from '@nestjs/passport';
 
 @Global()
 @Module({
-  imports: [PassportModule.register({ defaultStrategy: 'jwt', session: false }), JwtModule],
+  imports: [
+    PassportModule.register({ defaultStrategy: 'jwt', session: false }),
+    JwtModule.register({
+      secret: process.env.JWT_SECRET ?? 'dev-secret',
+      signOptions: { expiresIn: (process.env.JWT_EXPIRES_IN ?? '7d') as never },
+    }),
+  ],
   providers: [PrismaService, JwtStrategy, JwtAuthGuard, { provide: APP_FILTER, useClass: AllExceptionsFilter }],
   exports: [PrismaService, JwtStrategy, JwtAuthGuard, PassportModule, JwtModule],
 })

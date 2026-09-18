@@ -6,6 +6,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { UsersModule } from './modules/users/users.module';
 import { CatalogModule } from './modules/catalog/catalog.module';
 import { CartModule } from './modules/cart/cart.module';
+import { WishlistModule } from './modules/wishlist/wishlist.module';
 import { OrdersModule } from './modules/orders/orders.module';
 import { InventoryModule } from './modules/inventory/inventory.module';
 import { RecommendationsModule } from './modules/recommendations/recommendations.module';
@@ -22,6 +23,7 @@ import { NotificationsModule } from './modules/notifications/notifications.modul
     UsersModule,
     CatalogModule,
     CartModule,
+    WishlistModule,
     OrdersModule,
     InventoryModule,
     RecommendationsModule,

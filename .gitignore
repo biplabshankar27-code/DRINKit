@@ -8,3 +8,6 @@ dist/
 drinkit keys.txt
 *.keys.txt
 keys.txt
+
+dbs/
+backend/boot.log
