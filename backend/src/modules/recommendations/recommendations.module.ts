@@ -16,5 +16,6 @@ import { Product, ProductSchema } from '../catalog/product.schema';
   ],
   controllers: [RecommendationsController],
   providers: [RecommendationsService],
+  exports: [RecommendationsService],
 })
 export class RecommendationsModule {}
