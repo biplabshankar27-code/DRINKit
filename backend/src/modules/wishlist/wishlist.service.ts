@@ -35,6 +35,13 @@ export class WishlistService {
     return { productIds: wishlist.productIds };
   }
 
+  async clearAll(userId: string): Promise<{ productIds: string[] }> {
+    const wishlist = await this.ensureWishlist(userId);
+    wishlist.productIds = [];
+    await wishlist.save();
+    return { productIds: [] };
+  }
+
   private async ensureWishlist(userId: string): Promise<WishlistDocument> {
     const found = await this.wishlistModel.findOne({ userId });
     if (found) return found;

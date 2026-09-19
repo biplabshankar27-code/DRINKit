@@ -18,6 +18,11 @@ export class WishlistController {
     return this.wishlist.addProduct(userId, productId);
   }
 
+  @Delete()
+  clearAll(@CurrentUser('sub') userId: string) {
+    return this.wishlist.clearAll(userId);
+  }
+
   @Delete(':productId')
   removeProduct(@CurrentUser('sub') userId: string, @Param('productId') productId: string) {
     return this.wishlist.removeProduct(userId, productId);

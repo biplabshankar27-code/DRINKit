@@ -1,0 +1,1094 @@
+{
+  "image_policy": "Prefer authorized/licensed product photography. Wikimedia Commons can be used only when the individual file license and packaging/trademark considerations permit the intended use.",
+  "status": "External image files are not embedded because this runtime cannot bulk-download web assets. The manifest is designed for OpenCode to populate with verified URLs/files.",
+  "reference_sources": [
+    "https://commons.wikimedia.org/wiki/Category:Liquor_bottles",
+    "https://commons.wikimedia.org/wiki/Category:Whisky_bottles",
+    "https://commons.wikimedia.org/wiki/Category:Vodka_bottles",
+    "https://commons.wikimedia.org/wiki/Category:Rum_bottles",
+    "https://commons.wikimedia.org/wiki/Category:Beer_bottles",
+    "https://commons.wikimedia.org/wiki/Category:Wine_bottles"
+  ],
+  "products": [
+    {
+      "id": "whisky-01",
+      "name": "Royal Stag Deluxe",
+      "image_filename": "whisky/royal-stag-deluxe.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-02",
+      "name": "Blenders Pride",
+      "image_filename": "whisky/blenders-pride.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-03",
+      "name": "100 Pipers Deluxe Scotch",
+      "image_filename": "whisky/100-pipers-deluxe-scotch.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-04",
+      "name": "Jameson Irish Whiskey",
+      "image_filename": "whisky/jameson-irish-whiskey.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-05",
+      "name": "Chivas Regal 12",
+      "image_filename": "whisky/chivas-regal-12.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-06",
+      "name": "Johnnie Walker Black Label",
+      "image_filename": "whisky/johnnie-walker-black-label.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-07",
+      "name": "Monkey Shoulder",
+      "image_filename": "whisky/monkey-shoulder.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-08",
+      "name": "Jim Beam Black",
+      "image_filename": "whisky/jim-beam-black.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-09",
+      "name": "Amrut Fusion",
+      "image_filename": "whisky/amrut-fusion.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-10",
+      "name": "Paul John Brilliance",
+      "image_filename": "whisky/paul-john-brilliance.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-11",
+      "name": "Indri-Trini",
+      "image_filename": "whisky/indri-trini.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-12",
+      "name": "Glenfiddich 12",
+      "image_filename": "whisky/glenfiddich-12.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-13",
+      "name": "Glenfiddich 15",
+      "image_filename": "whisky/glenfiddich-15.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-14",
+      "name": "The Glenlivet 15",
+      "image_filename": "whisky/the-glenlivet-15.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "whisky-15",
+      "name": "The Glenlivet 18",
+      "image_filename": "whisky/the-glenlivet-18.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-01",
+      "name": "Old Monk XXX",
+      "image_filename": "rum/old-monk-xxx.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-02",
+      "name": "Bacardi Carta Blanca",
+      "image_filename": "rum/bacardi-carta-blanca.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-03",
+      "name": "Bacardi Black",
+      "image_filename": "rum/bacardi-black.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-04",
+      "name": "Captain Morgan Dark Rum",
+      "image_filename": "rum/captain-morgan-dark-rum.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-05",
+      "name": "Bacardi Gold",
+      "image_filename": "rum/bacardi-gold.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-06",
+      "name": "Havana Club 3 Años",
+      "image_filename": "rum/havana-club-3-a-os.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-07",
+      "name": "Bacardi Añejo Cuatro",
+      "image_filename": "rum/bacardi-a-ejo-cuatro.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-08",
+      "name": "Maka Zai Gold",
+      "image_filename": "rum/maka-zai-gold.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-09",
+      "name": "Maka Zai Bartenders Edition",
+      "image_filename": "rum/maka-zai-bartenders-edition.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-10",
+      "name": "Flor de Caña 7",
+      "image_filename": "rum/flor-de-ca-a-7.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-11",
+      "name": "Mount Gay Eclipse",
+      "image_filename": "rum/mount-gay-eclipse.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-12",
+      "name": "Diplomatico Reserva Exclusiva",
+      "image_filename": "rum/diplomatico-reserva-exclusiva.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-13",
+      "name": "Plantation Original Dark",
+      "image_filename": "rum/plantation-original-dark.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-14",
+      "name": "Camikara 3 Year",
+      "image_filename": "rum/camikara-3-year.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rum-15",
+      "name": "Camikara 12 Year",
+      "image_filename": "rum/camikara-12-year.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-01",
+      "name": "Kingfisher Premium",
+      "image_filename": "beer/kingfisher-premium.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-02",
+      "name": "Kingfisher Ultra",
+      "image_filename": "beer/kingfisher-ultra.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-03",
+      "name": "Kingfisher Strong",
+      "image_filename": "beer/kingfisher-strong.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-04",
+      "name": "Tuborg Green",
+      "image_filename": "beer/tuborg-green.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-05",
+      "name": "Tuborg Strong",
+      "image_filename": "beer/tuborg-strong.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-06",
+      "name": "Carlsberg Elephant",
+      "image_filename": "beer/carlsberg-elephant.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-07",
+      "name": "Carlsberg Smooth",
+      "image_filename": "beer/carlsberg-smooth.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-08",
+      "name": "Bira 91 White",
+      "image_filename": "beer/bira-91-white.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-09",
+      "name": "Bira 91 Blonde",
+      "image_filename": "beer/bira-91-blonde.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-10",
+      "name": "Bira 91 IPA",
+      "image_filename": "beer/bira-91-ipa.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-11",
+      "name": "Hoegaarden White",
+      "image_filename": "beer/hoegaarden-white.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-12",
+      "name": "Corona Extra",
+      "image_filename": "beer/corona-extra.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-13",
+      "name": "Budweiser Magnum",
+      "image_filename": "beer/budweiser-magnum.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-14",
+      "name": "Heineken",
+      "image_filename": "beer/heineken.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "beer-15",
+      "name": "Asahi Super Dry",
+      "image_filename": "beer/asahi-super-dry.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-01",
+      "name": "Magic Moments Premium",
+      "image_filename": "vodka/magic-moments-premium.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-02",
+      "name": "Smirnoff No.21",
+      "image_filename": "vodka/smirnoff-no-21.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-03",
+      "name": "Absolut Original",
+      "image_filename": "vodka/absolut-original.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-04",
+      "name": "Absolut Citron",
+      "image_filename": "vodka/absolut-citron.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-05",
+      "name": "Absolut Raspberry",
+      "image_filename": "vodka/absolut-raspberry.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-06",
+      "name": "Ketel One",
+      "image_filename": "vodka/ketel-one.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-07",
+      "name": "Finlandia Vodka",
+      "image_filename": "vodka/finlandia-vodka.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-08",
+      "name": "Grey Goose",
+      "image_filename": "vodka/grey-goose.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-09",
+      "name": "Belvedere",
+      "image_filename": "vodka/belvedere.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-10",
+      "name": "Cîroc",
+      "image_filename": "vodka/c-roc.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-11",
+      "name": "Beluga Noble",
+      "image_filename": "vodka/beluga-noble.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-12",
+      "name": "Smoke Lab Classic",
+      "image_filename": "vodka/smoke-lab-classic.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-13",
+      "name": "Smoke Lab Pink",
+      "image_filename": "vodka/smoke-lab-pink.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-14",
+      "name": "Stolichnaya Premium",
+      "image_filename": "vodka/stolichnaya-premium.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "vodka-15",
+      "name": "3 Kilos Vodka",
+      "image_filename": "vodka/3-kilos-vodka.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-01",
+      "name": "Greater Than London Dry Gin",
+      "image_filename": "gin/greater-than-london-dry-gin.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-02",
+      "name": "Gordon's London Dry Gin",
+      "image_filename": "gin/gordon-s-london-dry-gin.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-03",
+      "name": "Beefeater London Dry",
+      "image_filename": "gin/beefeater-london-dry.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-04",
+      "name": "Bombay Sapphire",
+      "image_filename": "gin/bombay-sapphire.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-05",
+      "name": "Tanqueray London Dry",
+      "image_filename": "gin/tanqueray-london-dry.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-06",
+      "name": "Stranger & Sons",
+      "image_filename": "gin/stranger-sons.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-07",
+      "name": "Hapusa Himalayan Dry Gin",
+      "image_filename": "gin/hapusa-himalayan-dry-gin.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-08",
+      "name": "Jaisalmer Indian Craft Gin",
+      "image_filename": "gin/jaisalmer-indian-craft-gin.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-09",
+      "name": "Greater Than Blue",
+      "image_filename": "gin/greater-than-blue.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-10",
+      "name": "Tanqueray No. Ten",
+      "image_filename": "gin/tanqueray-no-ten.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-11",
+      "name": "Roku Gin",
+      "image_filename": "gin/roku-gin.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-12",
+      "name": "Hendrick's Gin",
+      "image_filename": "gin/hendrick-s-gin.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-13",
+      "name": "Malfy Con Limone",
+      "image_filename": "gin/malfy-con-limone.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-14",
+      "name": "Monkey 47",
+      "image_filename": "gin/monkey-47.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "gin-15",
+      "name": "Bombay Sapphire Premier Cru",
+      "image_filename": "gin/bombay-sapphire-premier-cru.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-01",
+      "name": "Sula Chenin Blanc",
+      "image_filename": "wine/sula-chenin-blanc.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-02",
+      "name": "Sula Sauvignon Blanc",
+      "image_filename": "wine/sula-sauvignon-blanc.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-03",
+      "name": "Sula Shiraz",
+      "image_filename": "wine/sula-shiraz.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-04",
+      "name": "Sula Brut",
+      "image_filename": "wine/sula-brut.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-05",
+      "name": "Fratelli Classic Shiraz",
+      "image_filename": "wine/fratelli-classic-shiraz.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-06",
+      "name": "Fratelli Chardonnay",
+      "image_filename": "wine/fratelli-chardonnay.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-07",
+      "name": "York Arros",
+      "image_filename": "wine/york-arros.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-08",
+      "name": "Jacob's Creek Shiraz",
+      "image_filename": "wine/jacob-s-creek-shiraz.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-09",
+      "name": "Jacob's Creek Chardonnay",
+      "image_filename": "wine/jacob-s-creek-chardonnay.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-10",
+      "name": "Hardys Stamp Shiraz Cabernet",
+      "image_filename": "wine/hardys-stamp-shiraz-cabernet.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-11",
+      "name": "Casillero del Diablo Cabernet Sauvignon",
+      "image_filename": "wine/casillero-del-diablo-cabernet-sauvignon.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-12",
+      "name": "Penfolds Koonunga Hill Shiraz",
+      "image_filename": "wine/penfolds-koonunga-hill-shiraz.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-13",
+      "name": "Moët & Chandon Brut Impérial",
+      "image_filename": "wine/mo-t-chandon-brut-imp-rial.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-14",
+      "name": "Torres Sangre de Toro",
+      "image_filename": "wine/torres-sangre-de-toro.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "wine-15",
+      "name": "Yellow Tail Cabernet Sauvignon",
+      "image_filename": "wine/yellow-tail-cabernet-sauvignon.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-01",
+      "name": "Camino Real Blanco",
+      "image_filename": "tequila/camino-real-blanco.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-02",
+      "name": "Camino Real Gold",
+      "image_filename": "tequila/camino-real-gold.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-03",
+      "name": "Jose Cuervo Especial Silver",
+      "image_filename": "tequila/jose-cuervo-especial-silver.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-04",
+      "name": "Jose Cuervo Especial Gold",
+      "image_filename": "tequila/jose-cuervo-especial-gold.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-05",
+      "name": "Jose Cuervo Tradicional Plata",
+      "image_filename": "tequila/jose-cuervo-tradicional-plata.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-06",
+      "name": "Jose Cuervo Tradicional Reposado",
+      "image_filename": "tequila/jose-cuervo-tradicional-reposado.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-07",
+      "name": "1800 Silver",
+      "image_filename": "tequila/1800-silver.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-08",
+      "name": "1800 Reposado",
+      "image_filename": "tequila/1800-reposado.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-09",
+      "name": "1800 Añejo",
+      "image_filename": "tequila/1800-a-ejo.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-10",
+      "name": "Patrón Silver",
+      "image_filename": "tequila/patr-n-silver.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-11",
+      "name": "Patrón Reposado",
+      "image_filename": "tequila/patr-n-reposado.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-12",
+      "name": "Patrón Añejo",
+      "image_filename": "tequila/patr-n-a-ejo.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-13",
+      "name": "Don Julio Blanco",
+      "image_filename": "tequila/don-julio-blanco.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-14",
+      "name": "Don Julio Reposado",
+      "image_filename": "tequila/don-julio-reposado.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "tequila-15",
+      "name": "Don Julio 1942",
+      "image_filename": "tequila/don-julio-1942.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-01",
+      "name": "Bacardi Breezer Orange",
+      "image_filename": "rtd/bacardi-breezer-orange.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-02",
+      "name": "Bacardi Breezer Cranberry",
+      "image_filename": "rtd/bacardi-breezer-cranberry.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-03",
+      "name": "Bacardi Breezer Lime",
+      "image_filename": "rtd/bacardi-breezer-lime.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-04",
+      "name": "Bacardi Breezer Jamaican Passion",
+      "image_filename": "rtd/bacardi-breezer-jamaican-passion.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-05",
+      "name": "Bacardi Breezer Peach",
+      "image_filename": "rtd/bacardi-breezer-peach.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-06",
+      "name": "Smirnoff Ice",
+      "image_filename": "rtd/smirnoff-ice.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-07",
+      "name": "Smirnoff Ice Green Apple",
+      "image_filename": "rtd/smirnoff-ice-green-apple.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-08",
+      "name": "Bacardi Rum & Cola",
+      "image_filename": "rtd/bacardi-rum-cola.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-09",
+      "name": "Bacardi Rum & Cola Lime",
+      "image_filename": "rtd/bacardi-rum-cola-lime.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-10",
+      "name": "Jack Daniel's & Cola",
+      "image_filename": "rtd/jack-daniel-s-cola.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-11",
+      "name": "Jim Beam Highball",
+      "image_filename": "rtd/jim-beam-highball.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-12",
+      "name": "Gordon's Gin & Tonic",
+      "image_filename": "rtd/gordon-s-gin-tonic.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-13",
+      "name": "Bacardi Mojito RTD",
+      "image_filename": "rtd/bacardi-mojito-rtd.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-14",
+      "name": "Captain Morgan & Cola",
+      "image_filename": "rtd/captain-morgan-cola.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    },
+    {
+      "id": "rtd-15",
+      "name": "White Claw Hard Seltzer",
+      "image_filename": "rtd/white-claw-hard-seltzer.jpg",
+      "source_url": null,
+      "license": null,
+      "attribution": null,
+      "verified": false
+    }
+  ]
+}

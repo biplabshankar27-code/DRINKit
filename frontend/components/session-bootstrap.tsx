@@ -31,7 +31,10 @@ export function SessionBootstrap({ children }: { children: React.ReactNode }) {
             password: AUTO_LOGIN_PASSWORD,
           });
           useAuthStore.setState({ token: data.accessToken, user: data.user });
+          // fresh session every reload: wipe server-side session data as well
           void api.delete('/assistant/chat/history').catch(() => undefined);
+          void api.delete('/wishlist').catch(() => undefined);
+          void api.delete('/cart/items').catch(() => undefined);
         }
       } catch {
         // backend down or bad creds: render as guest instead of crashing
