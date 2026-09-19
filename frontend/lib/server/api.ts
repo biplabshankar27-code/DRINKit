@@ -183,31 +183,59 @@ function fallbackReply(message: string): { reply: string; picks: ApiProduct[] } 
   return { reply: "Here are some drinks I think you'll enjoy based on your message:\n" + lines.join('\n'), picks: list };
 }
 
+function parseBudget(message: string): number | null {
+  const m = message.match(/(?:under|below|less than|up ?to|max(?:imum)?|budget(?: of)?|within)\s*(?:rs\.?|inr|₹)?\s*([\d][\d,]*)\s*(k\b)?/i);
+  if (!m) return null;
+  const n = Number(m[1].replace(/,/g, ''));
+  if (!n) return null;
+  return m[2] ? n * 1000 : n;
+}
+
 function catalogContext(message: string): string {
-  const list = keywordSearch(message, 6);
-  const fallback = state().products.filter((p) => p.stock > 0).sort((a, b) => b.popularity - a.popularity).slice(0, 4);
-  return (list.length ? list : fallback)
+  const budget = parseBudget(message);
+  const inStock = state().products.filter((p) => p.stock > 0);
+  const pool = budget ? inStock.filter((p) => p.price <= budget) : inStock;
+  const list = keywordSearch(message, 6).filter((p) => !budget || p.price <= budget);
+  const picks = list.length ? list : [...pool].sort((a, b) => b.popularity - a.popularity).slice(0, 4);
+  const header = budget ? `User budget: Rs ${budget} maximum — only products at or below this price.\n` : '';
+  if (!picks.length) return `${header}NO IN-STOCK PRODUCTS AT OR BELOW THIS BUDGET.`;
+  return header + picks
     .map((p) => `id: ${p._id} | ${p.name} | ${p.category} (${p.subCategory}) | brand: ${p.brand} | ABV ${p.abv}% | Rs ${p.price} | flavors: ${p.flavorTags.join(', ')} | body: ${p.body ?? '-'} | sweetness: ${p.sweetness ?? '-'} | moods: ${(p.moods ?? []).join(', ') || '-'} | notes: ${p.tastingNotes.slice(0, 140)}`)
     .join('\n');
 }
 
 const SYSTEM_PROMPT = `You are the DRINKit AI Bartender — a friendly, knowledgeable drinks assistant inside a premium liquor e-commerce store.
 
-- Recommend specific products from the CATALOG CONTEXT when relevant; never invent products that aren't in it.
-- Explain why each pick matches (taste, occasion, budget, pairing).
-- Keep answers short and scannable; use **bold** for product names and ₹ for prices.
-- Encourage responsible drinking; assume adults of legal drinking age.
+Rules (follow strictly):
+- Recommend only products from the CATALOG CONTEXT. Never invent products, brands, ABVs, or prices.
+- If the user states a budget (e.g. "under 4000"), every product you name MUST cost at or below it. If nothing in the context fits, say so and suggest raising the budget — never name an over-budget bottle.
+- Quote prices exactly as they appear in the CATALOG CONTEXT, in ₹ with commas (e.g. ₹3,500). Never estimate, round, or alter a price.
+- Name at most 3 products. For each, one short line: **Name** (₹price) — why it fits (taste, occasion, pairing). Do not discuss any product you are not recommending.
+- The products you name MUST be exactly the products listed after RECOMMENDED_ids, in the same order.
 
 End every reply that recommends products with a line exactly like:
-RECOMMENDED_ids: id1, id2`;
+RECOMMENDED_ids: id1, id2
+
+Keep answers short and scannable; encourage responsible drinking; assume adults of legal drinking age.`;
 
 interface ParsedReply { text: string; ids: string[] }
 function parseRecommendationIds(raw: string): ParsedReply {
   const marker = /RECOMMENDED_ids:\s*(.+)/i;
   const match = raw.match(marker);
   if (!match) return { text: raw.trim(), ids: [] };
-  const ids = match[1].split(',').map((x) => x.trim()).filter((x) => /^[a-z]+_\w+$/i.test(x)).slice(0, 6);
+  const ids = match[1].split(',').map((x) => x.trim()).filter((x) => /^[a-z]+_\w+$/i.test(x)).slice(0, 3);
   return { text: raw.replace(marker, '').trim(), ids };
+}
+
+function namesToIds(text: string): string[] {
+  const db = state();
+  const names = [...text.matchAll(/\*\*([^*]+)\*\*/g)].map((m) => lower(m[1].trim()));
+  const ids: string[] = [];
+  for (const n of names) {
+    const hit = db.products.find((p) => lower(p.name) === n || lower(p.name).includes(n) || n.includes(lower(p.name)));
+    if (hit && !ids.includes(hit._id)) ids.push(hit._id);
+  }
+  return ids.slice(0, 3);
 }
 
 async function chatReply(message: string): Promise<{ reply: string; recommendations: ApiProduct[] }> {
@@ -222,7 +250,7 @@ async function chatReply(message: string): Promise<{ reply: string; recommendati
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
         body: JSON.stringify({
           model: process.env.GROQ_MODEL ?? 'openai/gpt-oss-120b',
-          temperature: 0.7,
+          temperature: 0.4,
           max_tokens: 700,
           messages: [
             { role: 'system', content: SYSTEM_PROMPT },
@@ -236,7 +264,7 @@ async function chatReply(message: string): Promise<{ reply: string; recommendati
       const raw: string = data?.choices?.[0]?.message?.content ?? '';
       const parsed = parseRecommendationIds(raw);
       replyText = parsed.text;
-      modelIds = parsed.ids;
+      modelIds = parsed.ids.length ? parsed.ids : namesToIds(parsed.text);
     } catch {
       const fb = fallbackReply(message);
       replyText = fb.reply;
@@ -251,7 +279,7 @@ async function chatReply(message: string): Promise<{ reply: string; recommendati
   const recommendations: ApiProduct[] = modelIds
     .map((id) => findProduct(id))
     .filter((p): p is ApiProduct => !!p && p.stock > 0)
-    .slice(0, 4);
+    .slice(0, 3);
 
   if (!recommendations.length) {
     recommendations.push(...keywordSearch(message, 3));
