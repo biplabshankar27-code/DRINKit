@@ -31,11 +31,11 @@ export class CatalogService {
 
     const filter: Record<string, unknown> = { isActive: true };
 
-    if (query.category) filter.category = query.category;
-    if (query.subCategory) filter.subCategory = query.subCategory;
-    if (query.origin) filter.origin = query.origin;
+    if (query.category) filter.category = new RegExp(`^${this.escapeRegex(query.category)}$`, 'i');
+    if (query.subCategory) filter.subCategory = new RegExp(`^${this.escapeRegex(query.subCategory)}$`, 'i');
+    if (query.origin) filter.origin = new RegExp(`^${this.escapeRegex(query.origin)}$`, 'i');
     if (query.flavors) {
-      const flavors = query.flavors.split(',').map((f) => f.trim()).filter(Boolean);
+      const flavors = query.flavors.split(',').map((f) => f.trim().toLowerCase()).filter(Boolean);
       if (flavors.length > 0) filter.flavorTags = { $in: flavors };
     }
     if (query.q) {
