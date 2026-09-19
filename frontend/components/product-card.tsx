@@ -3,22 +3,29 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { api, apiMessage } from '@/lib/api';
+import { useToast } from '@/components/toast';
+import { PriceDisplay } from '@/components/price-display';
 import { useAuthStore } from '@/store/auth';
 import { useCartStore } from '@/store/cart';
 import { useWishlistStore } from '@/store/wishlist';
 import type { CartTotals, Product } from '@/lib/types';
 
-const imageSrc = (image: string): string => (image.startsWith('/images/') ? image : image);
+const chipClass = (category: string): string => {
+  const cat = category.toLowerCase();
+  if (cat === 'whisky' || cat === 'rum') return 'chip chip-oak';
+  if (cat === 'wine') return 'chip chip-berry';
+  return 'chip';
+};
 
 export function ProductCard({ product, onAdd }: { product: Product; onAdd?: (line: { productId: string }) => void }) {
   const token = useAuthStore((s) => s.token);
-  const cart = useCartStore((s) => s.cart);
   const setCart = useCartStore((s) => s.setCart);
   const wishlisted = useWishlistStore((s) => s.productIds.includes(product._id));
   const toggleWishlist = useWishlistStore((s) => s.toggle);
+  const { toast } = useToast();
   const [busy, setBusy] = useState(false);
-  const [error, setError] = useState('');
   const outOfStock = product.stock <= 0;
+  const lowStock = !outOfStock && product.stock <= 5;
 
   const onWishlistToggle = async () => {
     if (!token) {
@@ -26,6 +33,7 @@ export function ProductCard({ product, onAdd }: { product: Product; onAdd?: (lin
       return;
     }
     await toggleWishlist(product._id);
+    toast(wishlisted ? 'Removed from wishlist' : 'Saved to wishlist', 'success');
   };
 
   const addToCart = async () => {
@@ -34,67 +42,115 @@ export function ProductCard({ product, onAdd }: { product: Product; onAdd?: (lin
       return;
     }
     setBusy(true);
-    setError('');
     try {
       const { data } = await api.post<CartTotals>('/cart/items', { productId: product._id, quantity: 1 });
       setCart(data);
+      toast('Added to cart', 'success');
       onAdd?.({ productId: product._id });
     } catch (e) {
-      setError(apiMessage(e));
+      toast(apiMessage(e), 'error');
     } finally {
       setBusy(false);
     }
   };
 
   return (
-    <div className="card flex flex-col overflow-hidden">
-      <Link href={`/product/${product._id}`} className="relative block aspect-3/4 overflow-hidden">
+    <div className="card card-hover group relative flex flex-col overflow-hidden">
+      <Link href={`/product/${product._id}`} className="relative block aspect-[3/4] overflow-hidden" style={{ background: 'var(--elevated)' }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={imageSrc(product.image)} alt={product.name} className="h-full w-full object-cover transition hover:scale-105" />
+        <img
+          src={product.image}
+          alt={product.name}
+          className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.06]"
+          loading="lazy"
+        />
         {outOfStock && (
-          <span className="absolute top-3 left-3 rounded-full bg-black/80 px-2 py-1 text-xs font-semibold text-red-300">
+          <span
+            className="absolute inset-x-0 top-1/2 mx-auto w-max -translate-y-1/2 rounded-full px-3 py-1.5 text-xs font-bold uppercase tracking-wider"
+            style={{ background: 'color-mix(in srgb, var(--surface) 88%, transparent)', color: 'var(--danger)' }}
+          >
             Out of stock
+          </span>
+        )}
+        {lowStock && (
+          <span
+            className="absolute left-3 top-3 rounded-full px-2 py-1 text-[10px] font-bold uppercase tracking-wider"
+            style={{ background: 'var(--danger-soft)', color: 'var(--danger)' }}
+          >
+            Only {product.stock} left
           </span>
         )}
         <button
           onClick={onWishlistToggle}
           aria-label={wishlisted ? 'Remove from wishlist' : 'Add to wishlist'}
-          className={`absolute top-3 right-3 flex h-9 w-9 items-center justify-center rounded-full bg-black/70 text-lg transition hover:bg-black/90 ${
-            wishlisted ? 'text-red-400' : 'text-neutral-300'
-          }`}
+          className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full text-base transition"
+          style={{
+            background: 'color-mix(in srgb, var(--surface) 85%, transparent)',
+            color: wishlisted ? 'var(--danger)' : 'var(--text-2)',
+            boxShadow: 'var(--shadow-1)',
+          }}
         >
           {wishlisted ? '♥' : '♡'}
         </button>
       </Link>
-      <div className="flex flex-1 flex-col gap-2 p-4">
-        <div className="flex items-center justify-between text-xs text-neutral-400">
-          <span>{product.category} · {product.volumeMl}ml · {product.abv}%</span>
-          <span className="text-amber-200">★ {product.rating.toFixed(1)}</span>
+
+      {/* WHY YOU MIGHT LIKE IT hover panel (desktop, non-touch) */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-3 bottom-[8.5rem] hidden translate-y-3 opacity-0 transition-all duration-200 md:group-hover:translate-y-0 md:group-hover:opacity-100 lg:block"
+      >
+        <div
+          className="rounded-xl p-3 text-xs leading-relaxed"
+          style={{ background: 'color-mix(in srgb, var(--elevated) 92%, transparent)', backdropFilter: 'blur(8px)', border: '1px solid var(--border)' }}
+        >
+          <div className="eyebrow mb-1" style={{ fontSize: '0.62rem' }}>
+            Why you might like it
+          </div>
+          <p className="line-clamp-2" style={{ color: 'var(--text-2)' }}>
+            {product.tastingNotes?.split(/(?<=[.!?])\s/)[0]}
+          </p>
+          {[...product.occasionTags, ...product.foodPairings].length > 0 && (
+            <p className="mt-1.5 line-clamp-1" style={{ color: 'var(--text-3)' }}>
+              Perfect for: {[...product.occasionTags, ...product.foodPairings].slice(0, 4).join(' · ')}
+            </p>
+          )}
         </div>
-        <Link href={`/product/${product._id}`} className="line-clamp-2 font-semibold leading-snug hover:text-amber-200">
+      </div>
+
+      <div className="flex flex-1 flex-col gap-2 p-4">
+        <div className="text-[11px] uppercase tracking-wider" style={{ color: 'var(--text-3)' }}>
+          {product.subCategory} · {product.brand}
+        </div>
+        <Link
+          href={`/product/${product._id}`}
+          className="font-display line-clamp-2 text-[15px] font-semibold leading-snug transition-colors hover:opacity-80"
+          style={{ color: 'var(--text)' }}
+        >
           {product.name}
         </Link>
         <div className="flex flex-wrap gap-1">
           {product.flavorTags.slice(0, 3).map((t) => (
-            <span key={t} className="chip">{t}</span>
+            <span key={t} className={chipClass(product.category)}>
+              {t}
+            </span>
           ))}
         </div>
-        <div className="mt-auto flex items-center justify-between pt-2">
+        <div className="mt-auto flex items-center justify-between gap-2 pt-2">
           <div>
-            <div className="font-bold">₹{product.price}</div>
-            {product.compareAtPrice && product.compareAtPrice > product.price && (
-              <div className="text-xs text-neutral-500 line-through">₹{product.compareAtPrice}</div>
-            )}
+            <PriceDisplay price={product.price} compareAtPrice={product.compareAtPrice} />
+            <div className="text-[11px]" style={{ color: 'var(--text-3)' }}>
+              {product.volumeMl}ml · {product.abv}% ABV
+            </div>
           </div>
           <button
             onClick={addToCart}
             disabled={busy || outOfStock}
-            className="btn btn-accent h-8 px-4 text-xs disabled:opacity-50"
+            aria-label={`Add ${product.name} to cart`}
+            className="btn btn-primary btn-sm shrink-0"
           >
-            Add
+            {busy ? '…' : '+ Add'}
           </button>
         </div>
-        {error && <p className="text-xs text-red-400">{error}</p>}
       </div>
     </div>
   );

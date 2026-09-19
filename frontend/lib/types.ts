@@ -1,3 +1,9 @@
+export interface CategoryInfo {
+  name: string;
+  subCategories: string[];
+  productCount: number;
+}
+
 export interface Product {
   _id: string;
   name: string;
@@ -18,6 +24,13 @@ export interface Product {
   stock: number;
   popularity: number;
   rating: number;
+  sweetness?: string;
+  body?: string;
+  moods?: string[];
+  servingSuggestions?: string[];
+  cocktailUses?: string[];
+  externalId?: string;
+  imageFilename?: string;
 }
 
 export interface CartLine {

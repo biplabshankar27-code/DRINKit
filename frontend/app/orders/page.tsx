@@ -1,77 +1,127 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { io } from 'socket.io-client';
+import { Suspense, useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import { api, apiMessage } from '@/lib/api';
+import type { Order } from '@/lib/types';
 import { useAuthStore } from '@/store/auth';
+import { SectionHeader } from '@/components/section-header';
+import { useToast } from '@/components/toast';
 
-const STATUS_STEPS = ['pending', 'confirmed', 'packed', 'out_for_delivery', 'delivered'];
-const API_WS = process.env.NEXT_PUBLIC_WS_URL ?? 'http://localhost:4000';
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-export default function OrdersPage() {
+function formatDate(iso: string): string {
+  const d = new Date(iso);
+  return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
+}
+
+function OrdersView() {
   const token = useAuthStore((s) => s.token);
-  const userId = useAuthStore((s) => s.user?.id);
-  const [orders, setOrders] = useState<any[]>([]);
+  const { toast } = useToast();
+  const params = useSearchParams();
+  const placedId = params.get('placed');
+  const [orders, setOrders] = useState<Order[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+  const [cancelingId, setCancelingId] = useState<string | null>(null);
+  const [placedTotal, setPlacedTotal] = useState<string>('');
 
   useEffect(() => {
     if (!token) { window.location.href = '/login'; return; }
-    api.get('/orders')
-      .then(({ data }) => setOrders(data))
-      .catch((e) => setError(apiMessage(e)))
+    api
+      .get<Order[]>('/orders')
+      .then(({ data }) => {
+        setOrders(data);
+        if (placedId) {
+          const placed = data.find((o) => o.id === placedId);
+          if (placed) setPlacedTotal(`₹${placed.grandTotal}`);
+        }
+      })
+      .catch((e) => toast(apiMessage(e), 'error'))
       .finally(() => setLoading(false));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
 
-  useEffect(() => {
-    if (!token || !userId || typeof window === 'undefined') return;
-    const socket = io(`${API_WS}/tracking`, { auth: { userId }, transports: ['websocket'] });
-    socket.on('order:status', ({ orderId, status }: { orderId: string; status: string }) => {
-      setOrders((prev) => prev.map((o) => (o.id === orderId ? { ...o, status } : o)));
-    });
-    return () => { socket.disconnect(); };
-  }, [token, userId]);
+  const cancel = async (id: string) => {
+    setCancelingId(id);
+    try {
+      const { data } = await api.post<Order>(`/orders/${id}/cancel`);
+      setOrders((prev) => prev.map((o) => (o.id === id ? { ...o, status: data.status } : o)));
+      toast('Order cancelled', 'info');
+    } catch (e) {
+      toast(apiMessage(e), 'error');
+    } finally {
+      setCancelingId(null);
+    }
+  };
 
-  if (loading) return <div className="skeleton h-64 w-full" />;
-  if (orders.length === 0) {
-    return <p className="py-20 text-center text-neutral-500">No orders yet — the sommelier is waiting for you.</p>;
-  }
+  if (loading) return <div className="skeleton my-10 h-64 w-full" />;
+
+  const placed = placedId ? orders.find((o) => o.id === placedId) : undefined;
 
   return (
-    <div className="space-y-4">
-      <h1 className="text-2xl font-black">Orders</h1>
-      {error && <p className="text-sm text-red-400">{error}</p>}
-      {orders.map((o) => {
-        const step = STATUS_STEPS.indexOf(o.status) + 1;
-        return (
-          <div key={o.id} className="card space-y-3 p-5">
-            <div className="flex items-center justify-between text-sm">
-              <span className="font-mono text-neutral-400">#{o.id.slice(0, 8)}</span>
-              <span className="font-semibold capitalize text-amber-200">{o.status.replace(/_/g, ' ')}</span>
+    <div className="space-y-6">
+      <SectionHeader eyebrow="Your history" title="Orders" subtitle="Every pour you've ordered, all in one place." />
+
+      {placedId && placed && (
+        <div className="card p-6 text-center" style={{ background: 'var(--success-soft)', borderColor: 'var(--success)' }}>
+          <p className="eyebrow" style={{ color: 'var(--success)' }}>Order confirmed</p>
+          <p className="font-display mt-1 text-xl">Thank you, your order is in.</p>
+          <p className="mt-1 text-sm" style={{ color: 'var(--text-2)' }}>
+            Order #{placed.id.slice(0, 8)} · {placedTotal}
+          </p>
+        </div>
+      )}
+
+      {orders.length === 0 && !placedId && (
+        <div className="card flex flex-col items-center px-8 py-16 text-center">
+          <div className="font-display text-2xl" style={{ color: 'var(--accent)' }}>No orders yet.</div>
+          <p className="mt-2 max-w-md text-sm" style={{ color: 'var(--text-2)' }}>
+            Whenever you&apos;re ready, we&apos;d love to pour something for you.
+          </p>
+          <Link href="/shop" className="btn btn-primary btn-sm mt-5">Start shopping</Link>
+        </div>
+      )}
+
+      {orders.map((o) => (
+        <div key={o.id} className="card space-y-3 p-5">
+          <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
+            <div className="flex items-center gap-3">
+              <span className="font-mono text-xs" style={{ color: 'var(--text-2)' }}>#{o.id.slice(0, 8)}</span>
+              <span style={{ color: 'var(--text-3)' }}>{formatDate(o.createdAt)}</span>
             </div>
-            <div className="flex gap-1">
-              {STATUS_STEPS.map((s, i) => (
-                <div key={s} className={`h-1.5 flex-1 rounded-full ${i < step ? 'bg-amber-300' : 'bg-white/10'}`} title={s} />
-              ))}
-            </div>
-            <div className="space-y-1 text-sm text-neutral-300">
-              {o.items.map((it: any) => (
-                <div key={it.productId} className="flex justify-between">
-                  <span>{it.quantity}× {it.name}</span>
-                  <span>₹{it.price * it.quantity}</span>
-                </div>
-              ))}
-            </div>
-            <div className="flex justify-between border-t border-white/10 pt-2 text-sm">
-              <span className="text-neutral-400">
-                {new Date(o.createdAt).toLocaleString()}
-                {o.etaMinutes ? ` · ETA ${o.etaMinutes}m` : ''}
-              </span>
-              <span className="font-bold">₹{o.grandTotal}</span>
-            </div>
+            <span className="chip capitalize">{o.status.replace(/_/g, ' ')}</span>
           </div>
-        );
-      })}
+          <p className="min-w-0 truncate text-sm" style={{ color: 'var(--text-2)' }}>
+            {o.items.map((it) => `${it.quantity}× ${it.name}`).join(', ')}
+          </p>
+          <div className="divider" />
+          <div className="flex items-center justify-between text-sm">
+            <span />
+            <span className="font-bold" style={{ color: 'var(--text)' }}>₹{o.grandTotal}</span>
+          </div>
+          {(o.status === 'pending' || o.status === 'confirmed') && (
+            <div className="flex justify-end">
+              <button
+                type="button"
+                onClick={() => void cancel(o.id)}
+                disabled={cancelingId === o.id}
+                className="btn btn-ghost btn-sm"
+              >
+                {cancelingId === o.id ? 'Cancelling…' : 'Cancel order'}
+              </button>
+            </div>
+          )}
+        </div>
+      ))}
     </div>
+  );
+}
+
+export default function OrdersPage() {
+  return (
+    <Suspense fallback={<div className="skeleton my-10 h-64 w-full" />}>
+      <OrdersView />
+    </Suspense>
   );
 }

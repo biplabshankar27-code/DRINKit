@@ -6,13 +6,17 @@ import { api, apiMessage } from '@/lib/api';
 import type { CartTotals } from '@/lib/types';
 import { useAuthStore } from '@/store/auth';
 import { useCartStore } from '@/store/cart';
+import { SectionHeader, EmptyState } from '@/components/section-header';
+import { QuantitySelector } from '@/components/quantity-selector';
+import { useToast } from '@/components/toast';
 
 export default function CartPage() {
   const token = useAuthStore((s) => s.token);
   const cart = useCartStore((s) => s.cart);
   const setCart = useCartStore((s) => s.setCart);
+  const { toast } = useToast();
   const [loading, setLoading] = useState(!cart);
-  const [error, setError] = useState('');
+  const [busyId, setBusyId] = useState<string | null>(null);
 
   useEffect(() => {
     if (!token) {
@@ -23,72 +27,129 @@ export default function CartPage() {
       api
         .get<CartTotals>('/cart')
         .then(({ data }) => setCart(data))
-        .catch((e) => setError(apiMessage(e)))
+        .catch((e) => toast(apiMessage(e), 'error'))
         .finally(() => setLoading(false));
     }
-  }, [token, cart, setCart]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [token]);
 
-  const update = async (productId: string, quantity: number) => {
+  const update = async (productId: string, quantity: number, name: string) => {
+    if (busyId === productId) return;
+    setBusyId(productId);
+    const prev = cart;
     try {
       const { data } = await api.patch<CartTotals>('/cart/items', { productId, quantity });
       setCart(data);
+      if (quantity === 0) toast(`Removed ${name} from cart`, 'info');
     } catch (e) {
-      setError(apiMessage(e));
+      if (prev) setCart(prev);
+      toast(apiMessage(e), 'error');
+    } finally {
+      setBusyId(null);
     }
   };
 
   const clear = async () => {
+    const prev = cart;
     try {
       const { data } = await api.delete<CartTotals>('/cart/items');
       setCart(data);
     } catch (e) {
-      setError(apiMessage(e));
+      if (prev) setCart(prev);
+      toast(apiMessage(e), 'error');
     }
   };
 
-  if (loading) return <div className="skeleton h-64 w-full" />;
+  if (loading) return <div className="skeleton my-10 h-64 w-full" />;
+
   if (!cart || cart.items.length === 0) {
     return (
-      <div className="py-20 text-center">
-        <p className="text-xl font-semibold">Your cart is empty</p>
-        <Link href="/catalog" className="btn btn-accent mt-4 h-10 px-6">Browse catalog</Link>
-      </div>
+      <EmptyState
+        title="Your cart is waiting for something good."
+        message="Browse the drinks and add a pour you'll enjoy."
+        ctaHref="/shop"
+        ctaLabel="Start Shopping"
+      />
     );
   }
 
   return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-black">Your cart</h1>
-        <button onClick={clear} className="text-sm text-neutral-400 hover:text-red-400">Clear</button>
-      </div>
-      {error && <p className="text-sm text-red-400">{error}</p>}
-      <div className="space-y-3">
-        {cart.items.map((line) => (
-          <div key={line.productId} className="card flex items-center gap-4 p-4">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={line.image} alt={line.name} className="h-20 w-16 rounded-lg object-cover" />
-            <div className="flex-1">
-              <Link href={`/product/${line.productId}`} className="font-semibold hover:text-amber-200">{line.name}</Link>
-              <p className="text-sm text-neutral-400">{line.category} · ₹{line.price}</p>
-            </div>
-            <div className="flex items-center rounded-full border border-white/10">
-              <button onClick={() => update(line.productId, line.quantity - 1)} className="px-3 py-1.5">−</button>
-              <span className="w-8 text-center text-sm">{line.quantity}</span>
-              <button onClick={() => update(line.productId, Math.min(line.stock, line.quantity + 1))} className="px-3 py-1.5">+</button>
-            </div>
-            <div className="w-20 text-right font-bold">₹{line.price * line.quantity}</div>
-          </div>
-        ))}
-      </div>
-      <div className="card space-y-2 p-6 text-sm">
-        <div className="flex justify-between"><span className="text-neutral-400">Items</span><span>₹{cart.itemsTotal}</span></div>
-        <div className="flex justify-between"><span className="text-neutral-400">Delivery</span><span>{cart.deliveryFee === 0 ? 'Free' : `₹${cart.deliveryFee}`}</span></div>
-        <div className="flex justify-between border-t border-white/10 pt-2 text-base font-bold">
-          <span>Total</span><span>₹{cart.grandTotal}</span>
+    <div className="grid gap-8 lg:grid-cols-[1fr_320px]">
+      <div>
+        <div className="flex items-end justify-between gap-3">
+          <SectionHeader title="Your cart" />
+          <button
+            type="button"
+            onClick={() => void clear()}
+            disabled={busyId !== null}
+            className="btn btn-quiet btn-sm"
+          >
+            Clear cart
+          </button>
         </div>
-        <Link href="/checkout" className="btn btn-accent mt-2 h-10 w-full">Checkout</Link>
+        <div className="space-y-3">
+          {cart.items.map((line) => (
+            <div key={line.productId} className="card flex items-center gap-4 p-4">
+              <div className="h-20 w-16 shrink-0 overflow-hidden rounded-[0.5rem]" style={{ background: 'var(--elevated)' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={line.image} alt={line.name} className="h-full w-full object-cover" loading="lazy" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <Link
+                  href={`/product/${line.productId}`}
+                  className="font-display block text-[15px] font-semibold leading-snug transition-opacity hover:opacity-80"
+                  style={{ color: 'var(--text)' }}
+                >
+                  {line.name}
+                </Link>
+                <p className="mt-1 text-xs" style={{ color: 'var(--text-3)' }}>
+                  {line.category} · ₹{line.price}
+                </p>
+              </div>
+              <QuantitySelector
+                value={line.quantity}
+                max={line.stock}
+                onChange={(q) => void update(line.productId, q, line.name)}
+              />
+              <div className="w-16 text-right text-sm font-bold" style={{ color: 'var(--text)' }}>
+                ₹{line.price * line.quantity}
+              </div>
+              <button
+                type="button"
+                aria-label={`Remove ${line.name}`}
+                disabled={busyId === line.productId}
+                onClick={() => void update(line.productId, 0, line.name)}
+                className="btn btn-quiet btn-sm"
+              >
+                ✕
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
+
+      <aside>
+        <div className="sticky top-6 space-y-4">
+          <div className="surface-muted space-y-2 p-5 text-sm">
+            <div className="flex justify-between">
+              <span style={{ color: 'var(--text-2)' }}>Items</span>
+              <span>₹{cart.itemsTotal}</span>
+            </div>
+            <div className="flex justify-between">
+              <span style={{ color: 'var(--text-2)' }}>Delivery</span>
+              <span>{cart.deliveryFee === 0 ? 'Free' : `₹${cart.deliveryFee}`}</span>
+            </div>
+            <div className="divider my-2" />
+            <div className="flex justify-between text-base font-bold">
+              <span>Grand total</span>
+              <span>₹{cart.grandTotal}</span>
+            </div>
+          </div>
+          <Link href="/checkout" className="btn btn-primary btn-lg w-full">
+            Proceed to checkout · ₹{cart.grandTotal}
+          </Link>
+        </div>
+      </aside>
     </div>
   );
 }

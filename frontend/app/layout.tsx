@@ -1,37 +1,47 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { AuthNav } from '@/components/auth-nav';
+import { Fraunces, Inter } from 'next/font/google';
+import { AppHeader } from '@/components/app-header';
+import { Footer } from '@/components/footer';
+import { MobileNav } from '@/components/mobile-nav';
 import { SessionBootstrap } from '@/components/session-bootstrap';
+import { ToastProvider } from '@/components/toast';
 import './globals.css';
 
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-display',
+  display: 'swap',
+});
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
-  title: 'DRINKit — liquor, delivered',
-  description: 'Fast liquor delivery with an AI sommelier to help you discover drinks.',
+  title: 'DRINKit — Find your pour',
+  description: 'Discover drinks picked for your taste, occasion and budget. Shop premium liquor with an AI Bartender.',
 };
+
+const themeScript = `(function(){try{var t=localStorage.getItem('drinkit-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="min-h-screen antialiased">
-        <SessionBootstrap>
-          <header className="sticky top-0 z-40 border-b border-white/5 bg-[#0b0b0e]/85 backdrop-blur">
-          <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-            <Link href="/" className="text-lg font-bold tracking-tight text-amber-200">
-              DRIN<span className="text-white">Kit</span>
-            </Link>
-            <nav className="flex items-center gap-4 text-sm text-neutral-300">
-              <Link href="/catalog" className="hover:text-amber-200">Catalog</Link>
-              <Link href="/chat" className="hover:text-amber-200">Sommelier</Link>
-              <Link href="/orders" className="hover:text-amber-200">Orders</Link>
-              <Link href="/wishlist" className="hover:text-amber-200">Wishlist</Link>
-              <Link href="/admin" className="hover:text-amber-200">Admin</Link>
-              <Link href="/cart" className="hover:text-amber-200">Cart</Link>
-              <AuthNav />
-            </nav>
-          </div>
-        </header>
-        <main className="mx-auto max-w-6xl px-4 py-6">{children}</main>
-        </SessionBootstrap>
+    <html lang="en" data-theme="light" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body className={`min-h-screen antialiased ${fraunces.variable} ${inter.variable}`}>
+        <ToastProvider>
+          <SessionBootstrap>
+            <AppHeader />
+            <main className="mx-auto max-w-7xl px-4 pb-28 md:pb-8" style={{ paddingTop: '1.5rem' }}>
+              {children}
+            </main>
+            <Footer />
+            <MobileNav />
+          </SessionBootstrap>
+        </ToastProvider>
       </body>
     </html>
   );
