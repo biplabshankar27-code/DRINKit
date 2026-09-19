@@ -129,10 +129,15 @@ export class AiAssistantService {
     const keywordProducts = await this.keywordSearch(message, 6);
     const list = keywordProducts.length > 0 ? keywordProducts : await this.recs.popular(4);
     return list
-      .map(
-        (p) =>
-          `id: ${String(p._id)} | ${p.name} | ${p.category} (${p.subCategory}) | ${p.brand} | origin: ${p.origin} | ABV ${p.abv}% | Rs ${p.price} | flavors: ${p.flavorTags.join(', ')} | notes: ${p.tastingNotes.slice(0, 140)}`,
-      )
+      .map((p) => {
+        let line = `id: ${String(p._id)} | ${p.name} | ${p.category} (${p.subCategory}) | ${p.brand} | origin: ${p.origin} | ABV ${p.abv}% | Rs ${p.price} | flavors: ${p.flavorTags.join(', ')} | notes: ${p.tastingNotes.slice(0, 140)}`;
+        const extra: string[] = [];
+        if (p.body) extra.push(`body: ${p.body}`);
+        if (p.sweetness) extra.push(`sweetness: ${p.sweetness}`);
+        if ((p.moods ?? []).length > 0) extra.push(`moods: ${p.moods.slice(0, 3).join(' ').toLowerCase()}`);
+        if (extra.length > 0) line += ` | ${extra.join(' | ')}`;
+        return line;
+      })
       .join('\n');
   }
 

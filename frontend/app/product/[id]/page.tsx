@@ -9,6 +9,8 @@ import { CartButton } from '@/components/cart-button';
 import { useAuthStore } from '@/store/auth';
 import { useWishlistStore } from '@/store/wishlist';
 
+const imageSrc = (image: string): string => (image.startsWith('/images/') ? image : image);
+
 function WishlistButton({ productId }: { productId: string }) {
   const token = useAuthStore((s) => s.token);
   const wishlisted = useWishlistStore((s) => s.productIds.includes(productId));
@@ -63,7 +65,7 @@ export default function ProductPage() {
     <div className="space-y-10">
       <div className="grid gap-8 md:grid-cols-2">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={product.image} alt={product.name} className="aspect-3/4 w-full rounded-2xl object-cover" />
+        <img src={imageSrc(product.image)} alt={product.name} className="aspect-3/4 w-full rounded-2xl object-cover" />
         <div className="space-y-4">
           <p className="text-sm text-neutral-400">
             {product.brand} · {product.origin} · {product.subCategory}

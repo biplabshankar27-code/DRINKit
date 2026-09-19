@@ -8,6 +8,7 @@
     "start": "node dist/main.js",
     "start:dev": "prisma generate && nest start --watch",
     "seed": "prisma generate && ts-node -r tsconfig-paths/register seed/seed.ts",
+    "seed:catalog": "prisma generate && node seed/seed-from-catalog.mjs",
     "prisma:push": "prisma db push"
   },
   "prisma": {

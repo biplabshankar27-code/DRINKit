@@ -62,6 +62,24 @@ export class Product {
 
   @Prop({ default: true })
   isActive!: boolean;
+
+  @Prop({ index: true, sparse: true })
+  externalId?: string;
+
+  @Prop()
+  sweetness?: string;
+
+  @Prop()
+  body?: string;
+
+  @Prop({ type: [String], default: [] })
+  moods!: string[];
+
+  @Prop({ type: [String], default: [] })
+  servingSuggestions!: string[];
+
+  @Prop()
+  imageFilename?: string;
 }
 
 export type ProductDocument = HydratedDocument<Product>;

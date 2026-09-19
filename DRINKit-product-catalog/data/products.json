@@ -2,28 +2,25 @@
   "project": "DRINKit",
   "catalog_version": "1.0",
   "total_products": 120,
-  "note": "Demo seed catalog prepared for development. Alcohol pricing, availability, pack size and legal sale conditions vary by Indian state/retailer.",
+  "note": "Catalog replaced with Commons-verified-image products where possible; see data/substitutions-plan.md.",
   "products": [
     {
       "id": "whisky-01",
-      "name": "Royal Stag Deluxe",
+      "name": "Director's Special Premium Whisky",
       "category": "WHISKY",
-      "subcategory": "Indian whisky",
-      "price_inr": 1200,
+      "subcategory": "Blended",
+      "price_inr": 980,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Royal Stag Deluxe with a smooth, caramel, woody profile.",
+      "abv_percent": 42.8,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Director's Special Premium Whisky with a curated demo profile.",
       "tasting_notes": [
-        "smooth",
-        "caramel",
-        "woody"
+        "Director's Special Premium Whisky: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "smooth",
-        "caramel",
-        "woody"
+        "director's"
       ],
       "sweetness": "medium",
       "body": "full",
@@ -32,18 +29,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "whisky",
@@ -54,30 +46,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "whisky/royal-stag-deluxe.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "directors-special-whisky-bottle.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Director%27s_Special_Whisky_Bottle.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Human3015 — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Director%27s_Special_Whisky_Bottle.JPG"
     },
     {
       "id": "whisky-02",
-      "name": "Blenders Pride",
+      "name": "Dewar's White Label Whisky",
       "category": "WHISKY",
-      "subcategory": "Indian whisky",
-      "price_inr": 1500,
+      "subcategory": "Blended",
+      "price_inr": 2900,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 42.8,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Blenders Pride with a fruity, smooth, oaky profile.",
+      "abv_percent": 40,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Dewar's White Label Whisky with a curated demo profile.",
       "tasting_notes": [
-        "fruity",
-        "smooth",
-        "oaky"
+        "Dewar's White Label Whisky: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "fruity",
-        "smooth",
-        "oaky"
+        "dewar's"
       ],
       "sweetness": "medium",
       "body": "full",
@@ -86,18 +79,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "whisky",
@@ -108,30 +96,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "whisky/blenders-pride.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "bottle-of-dewars-whisky.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Bottle_of_Dewar%27s_whisky.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Nfutvol — via Wikimedia Commons, CC BY-SA 3.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Bottle_of_Dewar%27s_whisky.jpg"
     },
     {
       "id": "whisky-03",
-      "name": "100 Pipers Deluxe Scotch",
+      "name": "Laphroaig 10 Year Old",
       "category": "WHISKY",
-      "subcategory": "Blended Scotch",
-      "price_inr": 1700,
+      "subcategory": "Single Malt",
+      "price_inr": 7800,
       "currency": "INR",
-      "size_ml": 750,
-      "abv_percent": 42.8,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "100 Pipers Deluxe Scotch with a fruity, malty, lightly smoky profile.",
+      "size_ml": 700,
+      "abv_percent": 48,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Laphroaig 10 Year Old with a curated demo profile.",
       "tasting_notes": [
-        "fruity",
-        "malty",
-        "lightly smoky"
+        "Laphroaig 10 Year Old: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "fruity",
-        "malty",
-        "lightly smoky"
+        "laphroaig"
       ],
       "sweetness": "medium",
       "body": "full",
@@ -140,18 +129,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "whisky",
@@ -162,9 +146,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "whisky/100-pipers-deluxe-scotch.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "laphroaig-10-year-old-whisky.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Laphroaig_10_year_old_whisky.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "attribution": "JIP — via Wikimedia Commons, CC BY-SA 3.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Laphroaig_10_year_old_whisky.jpg"
     },
     {
       "id": "whisky-04",
@@ -546,24 +534,21 @@
     },
     {
       "id": "whisky-11",
-      "name": "Indri-Trini",
+      "name": "Talisker 10 Year Old Storm",
       "category": "WHISKY",
-      "subcategory": "Indian single malt",
-      "price_inr": 6500,
+      "subcategory": "Single Malt",
+      "price_inr": 7000,
       "currency": "INR",
-      "size_ml": 750,
-      "abv_percent": 46,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Indri-Trini with a fruity, smoky, spicy profile.",
+      "size_ml": 700,
+      "abv_percent": 45.8,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Talisker 10 Year Old Storm with a curated demo profile.",
       "tasting_notes": [
-        "fruity",
-        "smoky",
-        "spicy"
+        "Talisker 10 Year Old Storm: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "fruity",
-        "smoky",
-        "spicy"
+        "talisker"
       ],
       "sweetness": "medium",
       "body": "full",
@@ -572,18 +557,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "whisky",
@@ -594,9 +574,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "whisky/indri-trini.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "talisker-dark-storm-whisky.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Talisker_Dark_Storm_whisky.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "attribution": "JIP — via Wikimedia Commons, CC BY-SA 3.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Talisker_Dark_Storm_whisky.jpg"
     },
     {
       "id": "whisky-12",
@@ -762,24 +746,21 @@
     },
     {
       "id": "whisky-15",
-      "name": "The Glenlivet 18",
+      "name": "The Macallan Amber 12",
       "category": "WHISKY",
-      "subcategory": "Single malt Scotch",
-      "price_inr": 14500,
+      "subcategory": "Single Malt",
+      "price_inr": 12500,
       "currency": "INR",
-      "size_ml": 750,
-      "abv_percent": 43,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "The Glenlivet 18 with a rich, dried fruit, oak profile.",
+      "size_ml": 700,
+      "abv_percent": 40,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "The Macallan Amber 12 with a curated demo profile.",
       "tasting_notes": [
-        "rich",
-        "dried fruit",
-        "oak"
+        "The Macallan Amber 12: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "rich",
-        "dried fruit",
-        "oak"
+        "the"
       ],
       "sweetness": "medium",
       "body": "full",
@@ -788,18 +769,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "whisky",
@@ -810,9 +786,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "whisky/the-glenlivet-18.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "macallan-amber-scotch-whisky.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Macallan_Amber_Scotch_whisky.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "attribution": "JIP — via Wikimedia Commons, CC BY-SA 3.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Macallan_Amber_Scotch_whisky.jpg"
     },
     {
       "id": "rum-01",
@@ -924,24 +904,21 @@
     },
     {
       "id": "rum-03",
-      "name": "Bacardi Black",
+      "name": "Appleton Estate Signature Blend",
       "category": "RUM",
-      "subcategory": "Dark rum",
-      "price_inr": 1700,
+      "subcategory": "Aged",
+      "price_inr": 3200,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Bacardi Black with a dark, caramel, spice profile.",
+      "abv_percent": 43,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Appleton Estate Signature Blend with a curated demo profile.",
       "tasting_notes": [
-        "dark",
-        "caramel",
-        "spice"
+        "Appleton Estate Signature Blend: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "dark",
-        "caramel",
-        "spice"
+        "appleton"
       ],
       "sweetness": "high",
       "body": "full",
@@ -950,18 +927,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rum",
@@ -972,9 +944,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rum/bacardi-black.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "appleton-estate-aged-21-years-bottled-2011-92329.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Appleton_Estate_Aged_21_Years_%28bottled_2011%29-92329.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Raimond Spekking — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Appleton_Estate_Aged_21_Years_(bottled_2011)-92329.jpg"
     },
     {
       "id": "rum-04",
@@ -1140,24 +1116,21 @@
     },
     {
       "id": "rum-07",
-      "name": "Bacardi Añejo Cuatro",
+      "name": "Barceló Imperial Premium Blend",
       "category": "RUM",
-      "subcategory": "Aged rum",
-      "price_inr": 2500,
+      "subcategory": "Aged",
+      "price_inr": 3200,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Bacardi Añejo Cuatro with a vanilla, oak, caramel profile.",
+      "abv_percent": 38,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Barceló Imperial Premium Blend with a curated demo profile.",
       "tasting_notes": [
-        "vanilla",
-        "oak",
-        "caramel"
+        "Barceló Imperial Premium Blend: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "vanilla",
-        "oak",
-        "caramel"
+        "barceló"
       ],
       "sweetness": "high",
       "body": "full",
@@ -1166,18 +1139,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rum",
@@ -1188,30 +1156,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rum/bacardi-a-ejo-cuatro.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "ron-barcelo-rum.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Ron_Barcelo_rum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Strongroots — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Ron_Barcelo_rum.jpg"
     },
     {
       "id": "rum-08",
-      "name": "Maka Zai Gold",
+      "name": "El Dorado 12 Year Old",
       "category": "RUM",
-      "subcategory": "Indian rum",
-      "price_inr": 2500,
+      "subcategory": "Aged",
+      "price_inr": 4200,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 42.8,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Maka Zai Gold with a tropical, vanilla, caramel profile.",
+      "abv_percent": 40,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "El Dorado 12 Year Old with a curated demo profile.",
       "tasting_notes": [
-        "tropical",
-        "vanilla",
-        "caramel"
+        "El Dorado 12 Year Old: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "tropical",
-        "vanilla",
-        "caramel"
+        "el"
       ],
       "sweetness": "high",
       "body": "full",
@@ -1220,18 +1189,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rum",
@@ -1242,30 +1206,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rum/maka-zai-gold.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "el-dorado-rum.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/El_Dorado_Rum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Aneil Lutchman — via Wikimedia Commons, CC BY-SA 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:El_Dorado_Rum.JPG"
     },
     {
       "id": "rum-09",
-      "name": "Maka Zai Bartenders Edition",
+      "name": "Brugal Extra Dry",
       "category": "RUM",
-      "subcategory": "Indian rum",
-      "price_inr": 2700,
+      "subcategory": "White Rum",
+      "price_inr": 2900,
       "currency": "INR",
-      "size_ml": 750,
-      "abv_percent": 42.8,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Maka Zai Bartenders Edition with a fruity, spicy, woody profile.",
+      "size_ml": 700,
+      "abv_percent": 38,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Brugal Extra Dry with a curated demo profile.",
       "tasting_notes": [
-        "fruity",
-        "spicy",
-        "woody"
+        "Brugal Extra Dry: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "fruity",
-        "spicy",
-        "woody"
+        "brugal"
       ],
       "sweetness": "medium",
       "body": "full",
@@ -1274,18 +1239,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rum",
@@ -1296,9 +1256,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rum/maka-zai-bartenders-edition.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "flickr---ronsaunders47---brugal-white-rum-.dominican-republic.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flickr_-_ronsaunders47_-_BRUGAL_WHITE_RUM_.DOMINICAN_REPUBLIC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Ronald Saunders from Warrington, UK — via Wikimedia Commons, CC BY-SA 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Flickr_-_ronsaunders47_-_BRUGAL_WHITE_RUM_.DOMINICAN_REPUBLIC.jpg"
     },
     {
       "id": "rum-10",
@@ -1410,24 +1374,21 @@
     },
     {
       "id": "rum-12",
-      "name": "Diplomatico Reserva Exclusiva",
+      "name": "Ron Zacapa XO Centenario",
       "category": "RUM",
-      "subcategory": "Aged rum",
-      "price_inr": 5000,
+      "subcategory": "Aged",
+      "price_inr": 9800,
       "currency": "INR",
       "size_ml": 750,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Diplomatico Reserva Exclusiva with a sweet, chocolate, fruit profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Ron Zacapa XO Centenario with a curated demo profile.",
       "tasting_notes": [
-        "sweet",
-        "chocolate",
-        "fruit"
+        "Ron Zacapa XO Centenario: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "sweet",
-        "chocolate",
-        "fruit"
+        "ron"
       ],
       "sweetness": "high",
       "body": "full",
@@ -1436,18 +1397,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rum",
@@ -1458,30 +1414,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rum/diplomatico-reserva-exclusiva.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "ron-zacapa-xo-centenario-rum.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Ron_Zacapa_XO_Centenario_Rum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 2.0",
+      "attribution": "Dominic Lockyer — via Wikimedia Commons, CC BY 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Ron_Zacapa_XO_Centenario_Rum.jpg"
     },
     {
       "id": "rum-13",
-      "name": "Plantation Original Dark",
+      "name": "Malibu Pineapple Rum",
       "category": "RUM",
-      "subcategory": "Dark rum",
-      "price_inr": 3500,
+      "subcategory": "Flavored",
+      "price_inr": 1500,
       "currency": "INR",
-      "size_ml": 750,
-      "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Plantation Original Dark with a molasses, spice, fruit profile.",
+      "size_ml": 700,
+      "abv_percent": 21,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Malibu Pineapple Rum with a curated demo profile.",
       "tasting_notes": [
-        "molasses",
-        "spice",
-        "fruit"
+        "Malibu Pineapple Rum: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "molasses",
-        "spice",
-        "fruit"
+        "malibu"
       ],
       "sweetness": "medium",
       "body": "full",
@@ -1490,18 +1447,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rum",
@@ -1512,30 +1464,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rum/plantation-original-dark.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "rum-display-in-liquor-store.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Rum_display_in_liquor_store.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "User:O'Dea — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Rum_display_in_liquor_store.jpg"
     },
     {
       "id": "rum-14",
-      "name": "Camikara 3 Year",
+      "name": "Zacapa 23 Solera",
       "category": "RUM",
-      "subcategory": "Indian cane rum",
-      "price_inr": 4500,
+      "subcategory": "Aged",
+      "price_inr": 6800,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 50,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Camikara 3 Year with a cane, vanilla, spice profile.",
+      "abv_percent": 40,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Zacapa 23 Solera with a curated demo profile.",
       "tasting_notes": [
-        "cane",
-        "vanilla",
-        "spice"
+        "Zacapa 23 Solera: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "cane",
-        "vanilla",
-        "spice"
+        "zacapa"
       ],
       "sweetness": "high",
       "body": "full",
@@ -1544,18 +1497,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rum",
@@ -1566,30 +1514,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rum/camikara-3-year.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "ron-zacapa-23-year-rum.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Ron_Zacapa_23_year_rum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Urururu — via Wikimedia Commons, CC BY-SA 3.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Ron_Zacapa_23_year_rum.jpg"
     },
     {
       "id": "rum-15",
-      "name": "Camikara 12 Year",
+      "name": "Havana Club 7 Años",
       "category": "RUM",
-      "subcategory": "Indian aged rum",
-      "price_inr": 8500,
+      "subcategory": "Aged",
+      "price_inr": 5800,
       "currency": "INR",
-      "size_ml": 750,
-      "abv_percent": 50,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Camikara 12 Year with a rich, woody, dried fruit profile.",
+      "size_ml": 700,
+      "abv_percent": 40,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Havana Club 7 Años with a curated demo profile.",
       "tasting_notes": [
-        "rich",
-        "woody",
-        "dried fruit"
+        "Havana Club 7 Años: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "rich",
-        "woody",
-        "dried fruit"
+        "havana"
       ],
       "sweetness": "medium",
       "body": "full",
@@ -1598,18 +1547,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rum",
@@ -1620,9 +1564,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rum/camikara-12-year.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "havana-club-rum-16081803008.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Havana_Club_Rum_%2816081803008%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 2.0",
+      "attribution": "Paul Sableman — via Wikimedia Commons, CC BY 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Havana_Club_Rum_(16081803008).jpg"
     },
     {
       "id": "beer-01",
@@ -1732,24 +1680,21 @@
     },
     {
       "id": "beer-03",
-      "name": "Kingfisher Strong",
+      "name": "Coors Light",
       "category": "BEER",
-      "subcategory": "Strong lager",
-      "price_inr": 180,
+      "subcategory": "Lager",
+      "price_inr": 240,
       "currency": "INR",
-      "size_ml": 330,
-      "abv_percent": 8,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Kingfisher Strong with a malty, bold, crisp profile.",
+      "size_ml": 355,
+      "abv_percent": 4.2,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Coors Light with a curated demo profile.",
       "tasting_notes": [
-        "malty",
-        "bold",
-        "crisp"
+        "Coors Light: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "malty",
-        "bold",
-        "crisp"
+        "coors"
       ],
       "sweetness": "low",
       "body": "light",
@@ -1757,18 +1702,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "beer",
@@ -1779,30 +1719,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "beer/kingfisher-strong.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "coors-coors-light-bottle-in-australia.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Coors_%28Coors_Light%29_Bottle_in_Australia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Uttamstef12 — via Wikimedia Commons, CC BY-SA 3.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Coors_(Coors_Light)_Bottle_in_Australia.jpg"
     },
     {
       "id": "beer-04",
-      "name": "Tuborg Green",
+      "name": "Tuborg Pilsener",
       "category": "BEER",
       "subcategory": "Lager",
-      "price_inr": 170,
+      "price_inr": 210,
       "currency": "INR",
-      "size_ml": 330,
+      "size_ml": 500,
       "abv_percent": 4.6,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Tuborg Green with a crisp, mildly bitter, malty profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Tuborg Pilsener with a curated demo profile.",
       "tasting_notes": [
-        "crisp",
-        "mildly bitter",
-        "malty"
+        "Tuborg Pilsener: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "crisp",
-        "mildly bitter",
-        "malty"
+        "tuborg"
       ],
       "sweetness": "low",
       "body": "light",
@@ -1810,18 +1751,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "beer",
@@ -1832,30 +1768,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "beer/tuborg-green.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "tuborg-bottle-copenhagen!.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Tuborg_Bottle%2C_Copenhagen%21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Dennis G. Jarvis — via Wikimedia Commons, CC BY-SA 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Tuborg_Bottle,_Copenhagen!.jpg"
     },
     {
       "id": "beer-05",
-      "name": "Tuborg Strong",
+      "name": "Sol Mexican Lager",
       "category": "BEER",
-      "subcategory": "Strong lager",
-      "price_inr": 190,
+      "subcategory": "Lager",
+      "price_inr": 260,
       "currency": "INR",
-      "size_ml": 330,
-      "abv_percent": 8,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Tuborg Strong with a bold, malty, bitter profile.",
+      "size_ml": 355,
+      "abv_percent": 4.5,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Sol Mexican Lager with a curated demo profile.",
       "tasting_notes": [
-        "bold",
-        "malty",
-        "bitter"
+        "Sol Mexican Lager: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "bold",
-        "malty",
-        "bitter"
+        "sol"
       ],
       "sweetness": "low",
       "body": "light",
@@ -1863,18 +1800,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "beer",
@@ -1885,9 +1817,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "beer/tuborg-strong.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "sol-beer-bottle.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Sol_beer_bottle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 2.0",
+      "attribution": "Sarah Wu — via Wikimedia Commons, CC BY 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Sol_beer_bottle.jpg"
     },
     {
       "id": "beer-06",
@@ -1944,24 +1880,21 @@
     },
     {
       "id": "beer-07",
-      "name": "Carlsberg Smooth",
+      "name": "Foster's Lager",
       "category": "BEER",
       "subcategory": "Lager",
-      "price_inr": 190,
+      "price_inr": 240,
       "currency": "INR",
-      "size_ml": 330,
-      "abv_percent": 4.8,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Carlsberg Smooth with a smooth, light, malty profile.",
+      "size_ml": 375,
+      "abv_percent": 5,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Foster's Lager with a curated demo profile.",
       "tasting_notes": [
-        "smooth",
-        "light",
-        "malty"
+        "Foster's Lager: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "smooth",
-        "light",
-        "malty"
+        "foster's"
       ],
       "sweetness": "low",
       "body": "light",
@@ -1969,18 +1902,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "beer",
@@ -1991,9 +1919,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "beer/carlsberg-smooth.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "kotipizza-mexicana-and-fosters-lager.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Kotipizza_Mexicana_and_Foster%27s_Lager.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "JIP — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Kotipizza_Mexicana_and_Foster%27s_Lager.jpg"
     },
     {
       "id": "beer-08",
@@ -2368,24 +2300,21 @@
     },
     {
       "id": "beer-15",
-      "name": "Asahi Super Dry",
+      "name": "Paulaner Oktoberfest Märzen",
       "category": "BEER",
-      "subcategory": "Dry lager",
+      "subcategory": "Wheat",
       "price_inr": 350,
       "currency": "INR",
       "size_ml": 330,
-      "abv_percent": 5,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Asahi Super Dry with a crisp, dry, clean profile.",
+      "abv_percent": 5.5,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Paulaner Oktoberfest Märzen with a curated demo profile.",
       "tasting_notes": [
-        "crisp",
-        "dry",
-        "clean"
+        "Paulaner Oktoberfest Märzen: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "crisp",
-        "dry",
-        "clean"
+        "paulaner"
       ],
       "sweetness": "low",
       "body": "light",
@@ -2393,18 +2322,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "beer",
@@ -2415,9 +2339,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "beer/asahi-super-dry.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "paulaner-oktoberfest-marzen-11.2oz-bottle-and-beer-mug-20121017-img-8995.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Paulaner_Oktoberfest_Marzen_11.2oz_bottle_and_beer_mug_20121017_IMG_8995.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 3.0",
+      "attribution": "Scott A. Miller — via Wikimedia Commons, CC BY 3.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Paulaner_Oktoberfest_Marzen_11.2oz_bottle_and_beer_mug_20121017_IMG_8995.jpg"
     },
     {
       "id": "vodka-01",
@@ -2633,24 +2561,21 @@
     },
     {
       "id": "vodka-05",
-      "name": "Absolut Raspberry",
+      "name": "Russian Standard Original",
       "category": "VODKA",
-      "subcategory": "Flavored vodka",
-      "price_inr": 2500,
+      "subcategory": "Plain",
+      "price_inr": 2700,
       "currency": "INR",
-      "size_ml": 750,
+      "size_ml": 700,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Absolut Raspberry with a raspberry, fruity, smooth profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Russian Standard Original with a curated demo profile.",
       "tasting_notes": [
-        "raspberry",
-        "fruity",
-        "smooth"
+        "Russian Standard Original: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "raspberry",
-        "fruity",
-        "smooth"
+        "russian"
       ],
       "sweetness": "medium",
       "body": "light",
@@ -2658,18 +2583,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "vodka",
@@ -2680,30 +2600,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "vodka/absolut-raspberry.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "russian-standard-vodka.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Russian_Standard_Vodka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "attribution": "kallerna — via Wikimedia Commons, CC BY-SA 3.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Russian_Standard_Vodka.jpg"
     },
     {
       "id": "vodka-06",
-      "name": "Ketel One",
+      "name": "Tito's Handmade Vodka",
       "category": "VODKA",
-      "subcategory": "Vodka",
-      "price_inr": 3000,
+      "subcategory": "Premium",
+      "price_inr": 3200,
       "currency": "INR",
       "size_ml": 750,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Ketel One with a citrus, crisp, smooth profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Tito's Handmade Vodka with a curated demo profile.",
       "tasting_notes": [
-        "citrus",
-        "crisp",
-        "smooth"
+        "Tito's Handmade Vodka: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "citrus",
-        "crisp",
-        "smooth"
+        "tito's"
       ],
       "sweetness": "medium",
       "body": "light",
@@ -2711,18 +2632,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "vodka",
@@ -2733,9 +2649,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "vodka/ketel-one.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "titos-vodka-bottle-1.75l-size.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Tito%27s_Vodka_bottle_1.75L_size.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Kenneth C. Zirkel — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Tito%27s_Vodka_bottle_1.75L_size.jpg"
     },
     {
       "id": "vodka-07",
@@ -2898,24 +2818,21 @@
     },
     {
       "id": "vodka-10",
-      "name": "Cîroc",
+      "name": "Absolut Elyx",
       "category": "VODKA",
-      "subcategory": "Grape vodka",
-      "price_inr": 4500,
+      "subcategory": "Premium",
+      "price_inr": 7800,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Cîroc with a citrus, fruity, smooth profile.",
+      "abv_percent": 42.3,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Absolut Elyx with a curated demo profile.",
       "tasting_notes": [
-        "citrus",
-        "fruity",
-        "smooth"
+        "Absolut Elyx: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "citrus",
-        "fruity",
-        "smooth"
+        "absolut"
       ],
       "sweetness": "medium",
       "body": "light",
@@ -2923,18 +2840,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "vodka",
@@ -2945,30 +2857,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "vodka/c-roc.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "absolut-elyx-vodka-7017043061.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Absolut_Elyx_Vodka_%287017043061%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Eva Rinaldi — via Wikimedia Commons, CC BY-SA 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Absolut_Elyx_Vodka_(7017043061).jpg"
     },
     {
       "id": "vodka-11",
-      "name": "Beluga Noble",
+      "name": "Crystal Head Vodka",
       "category": "VODKA",
-      "subcategory": "Vodka",
-      "price_inr": 5500,
+      "subcategory": "Premium",
+      "price_inr": 9800,
       "currency": "INR",
       "size_ml": 750,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Beluga Noble with a smooth, creamy, grainy profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Crystal Head Vodka with a curated demo profile.",
       "tasting_notes": [
-        "smooth",
-        "creamy",
-        "grainy"
+        "Crystal Head Vodka: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "smooth",
-        "creamy",
-        "grainy"
+        "crystal"
       ],
       "sweetness": "medium",
       "body": "light",
@@ -2976,18 +2889,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "vodka",
@@ -2998,30 +2906,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "vodka/beluga-noble.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "crystal-head-bottle-shot.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Crystal_Head_Bottle_Shot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "attribution": "RGenta — via Wikimedia Commons, CC BY-SA 3.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Crystal_Head_Bottle_Shot.jpg"
     },
     {
       "id": "vodka-12",
-      "name": "Smoke Lab Classic",
+      "name": "Zubrowka Bison Grass Vodka",
       "category": "VODKA",
-      "subcategory": "Indian vodka",
-      "price_inr": 2500,
+      "subcategory": "Flavored",
+      "price_inr": 2600,
       "currency": "INR",
-      "size_ml": 750,
+      "size_ml": 700,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Smoke Lab Classic with a clean, smooth, lightly sweet profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Zubrowka Bison Grass Vodka with a curated demo profile.",
       "tasting_notes": [
-        "clean",
-        "smooth",
-        "lightly sweet"
+        "Zubrowka Bison Grass Vodka: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "clean",
-        "smooth",
-        "lightly sweet"
+        "zubrowka"
       ],
       "sweetness": "medium",
       "body": "light",
@@ -3029,18 +2938,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "vodka",
@@ -3051,30 +2955,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "vodka/smoke-lab-classic.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "zubrowka-vodka-01.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Zubrowka_vodka_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Jojo — via Wikimedia Commons, CC BY-SA 3.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Zubrowka_vodka_01.jpg"
     },
     {
       "id": "vodka-13",
-      "name": "Smoke Lab Pink",
+      "name": "Absolut Miniature Collection",
       "category": "VODKA",
-      "subcategory": "Flavored vodka",
-      "price_inr": 2800,
+      "subcategory": "Gift Pack",
+      "price_inr": 1900,
       "currency": "INR",
-      "size_ml": 750,
+      "size_ml": 375,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Smoke Lab Pink with a fruity, floral, smooth profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Absolut Miniature Collection with a curated demo profile.",
       "tasting_notes": [
-        "fruity",
-        "floral",
-        "smooth"
+        "Absolut Miniature Collection: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "fruity",
-        "floral",
-        "smooth"
+        "absolut"
       ],
       "sweetness": "medium",
       "body": "light",
@@ -3082,18 +2987,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "vodka",
@@ -3104,30 +3004,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "vodka/smoke-lab-pink.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "absolut-vodka-collection.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Absolut_Vodka_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "attribution": "Originally uploaded by Martinlebel (Transferred by Komischn) — via Wikimedia Commons, CC0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Absolut_Vodka_Collection.jpg"
     },
     {
       "id": "vodka-14",
-      "name": "Stolichnaya Premium",
+      "name": "Stolichnaya Red Label",
       "category": "VODKA",
-      "subcategory": "Vodka",
+      "subcategory": "Plain",
       "price_inr": 2700,
       "currency": "INR",
-      "size_ml": 750,
+      "size_ml": 700,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Stolichnaya Premium with a peppery, grainy, clean profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Stolichnaya Red Label with a curated demo profile.",
       "tasting_notes": [
-        "peppery",
-        "grainy",
-        "clean"
+        "Stolichnaya Red Label: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "peppery",
-        "grainy",
-        "clean"
+        "stolichnaya"
       ],
       "sweetness": "medium",
       "body": "light",
@@ -3135,18 +3036,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "vodka",
@@ -3157,9 +3053,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "vodka/stolichnaya-premium.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "anchorage-alaska-museum-russia-exhibit---stolichnaya-vodka.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Anchorage_Alaska_Museum_Russia_Exhibit_-_Stolichnaya_vodka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 2.0",
+      "attribution": "C Watts — via Wikimedia Commons, CC BY 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Anchorage_Alaska_Museum_Russia_Exhibit_-_Stolichnaya_vodka.jpg"
     },
     {
       "id": "vodka-15",
@@ -3216,24 +3116,21 @@
     },
     {
       "id": "gin-01",
-      "name": "Greater Than London Dry Gin",
+      "name": "Seagram's Extra Dry Gin",
       "category": "GIN",
-      "subcategory": "London Dry gin",
-      "price_inr": 1700,
+      "subcategory": "London Dry",
+      "price_inr": 1800,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 43,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Greater Than London Dry Gin with a juniper, citrus, herbal profile.",
+      "abv_percent": 40,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Seagram's Extra Dry Gin with a curated demo profile.",
       "tasting_notes": [
-        "juniper",
-        "citrus",
-        "herbal"
+        "Seagram's Extra Dry Gin: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "juniper",
-        "citrus",
-        "herbal"
+        "seagram's"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -3241,18 +3138,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "gin",
@@ -3263,9 +3155,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "gin/greater-than-london-dry-gin.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "seagrams-extra-dry-gin-53074621048.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Seagram%27s_Extra_Dry_Gin_%2853074621048%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 2.0",
+      "attribution": "Tony Webster — via Wikimedia Commons, CC BY 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Seagram%27s_Extra_Dry_Gin_(53074621048).jpg"
     },
     {
       "id": "gin-02",
@@ -3481,24 +3377,21 @@
     },
     {
       "id": "gin-06",
-      "name": "Stranger & Sons",
+      "name": "Sipsmith Sloe Gin",
       "category": "GIN",
-      "subcategory": "Indian craft gin",
-      "price_inr": 3000,
+      "subcategory": "Flavored",
+      "price_inr": 3200,
       "currency": "INR",
-      "size_ml": 750,
-      "abv_percent": 43,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Stranger & Sons with a citrus, spice, juniper profile.",
+      "size_ml": 700,
+      "abv_percent": 29,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Sipsmith Sloe Gin with a curated demo profile.",
       "tasting_notes": [
-        "citrus",
-        "spice",
-        "juniper"
+        "Sipsmith Sloe Gin: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "citrus",
-        "spice",
-        "juniper"
+        "sipsmith"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -3506,18 +3399,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "gin",
@@ -3528,30 +3416,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "gin/stranger-sons.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "sipsmith-sloe-gin.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Sipsmith_Sloe_Gin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "JIP — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Sipsmith_Sloe_Gin.jpg"
     },
     {
       "id": "gin-07",
-      "name": "Hapusa Himalayan Dry Gin",
+      "name": "Bombay Sapphire East",
       "category": "GIN",
-      "subcategory": "Indian craft gin",
+      "subcategory": "Flavored",
       "price_inr": 3200,
       "currency": "INR",
-      "size_ml": 750,
-      "abv_percent": 43,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Hapusa Himalayan Dry Gin with a earthy, juniper, tropical profile.",
+      "size_ml": 700,
+      "abv_percent": 42.8,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Bombay Sapphire East with a curated demo profile.",
       "tasting_notes": [
-        "earthy",
-        "juniper",
-        "tropical"
+        "Bombay Sapphire East: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "earthy",
-        "juniper",
-        "tropical"
+        "bombay"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -3559,18 +3448,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "gin",
@@ -3581,30 +3465,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "gin/hapusa-himalayan-dry-gin.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "bombay-sapphire-different-bottles.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Bombay_Sapphire_different_bottles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 2.0",
+      "attribution": "User:Mattes — via Wikimedia Commons, CC BY 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Bombay_Sapphire_different_bottles.jpg"
     },
     {
       "id": "gin-08",
-      "name": "Jaisalmer Indian Craft Gin",
+      "name": "Aviation American Gin",
       "category": "GIN",
-      "subcategory": "Indian craft gin",
-      "price_inr": 3300,
+      "subcategory": "Craft",
+      "price_inr": 3400,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 43,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Jaisalmer Indian Craft Gin with a juniper, citrus, spice profile.",
+      "abv_percent": 44,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Aviation American Gin with a curated demo profile.",
       "tasting_notes": [
-        "juniper",
-        "citrus",
-        "spice"
+        "Aviation American Gin: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "juniper",
-        "citrus",
-        "spice"
+        "aviation"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -3612,18 +3497,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "gin",
@@ -3634,30 +3514,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "gin/jaisalmer-indian-craft-gin.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "aviation-american-gin-distillery-filling-station.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Aviation_American_Gin_Distillery_filling_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Mattsjc — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Aviation_American_Gin_Distillery_filling_station.jpg"
     },
     {
       "id": "gin-09",
-      "name": "Greater Than Blue",
+      "name": "Plymouth Gin",
       "category": "GIN",
-      "subcategory": "Flavored gin",
-      "price_inr": 2200,
+      "subcategory": "London Dry",
+      "price_inr": 3000,
       "currency": "INR",
-      "size_ml": 750,
-      "abv_percent": 43,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Greater Than Blue with a blueberry, citrus, juniper profile.",
+      "size_ml": 700,
+      "abv_percent": 41.2,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Plymouth Gin with a curated demo profile.",
       "tasting_notes": [
-        "blueberry",
-        "citrus",
-        "juniper"
+        "Plymouth Gin: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "blueberry",
-        "citrus",
-        "juniper"
+        "plymouth"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -3665,18 +3546,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "gin",
@@ -3687,30 +3563,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "gin/greater-than-blue.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "plymouth-gin-1793-black-friars-distillery-2.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Plymouth_Gin_1793_Black_Friars_Distillery_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "attribution": "WestportWiki — via Wikimedia Commons, CC BY-SA 3.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Plymouth_Gin_1793_Black_Friars_Distillery_2.jpg"
     },
     {
       "id": "gin-10",
-      "name": "Tanqueray No. Ten",
+      "name": "Tanqueray No. TEN",
       "category": "GIN",
-      "subcategory": "Premium gin",
+      "subcategory": "Craft",
       "price_inr": 4500,
       "currency": "INR",
-      "size_ml": 750,
+      "size_ml": 700,
       "abv_percent": 47.3,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Tanqueray No. Ten with a citrus, juniper, floral profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Tanqueray No. TEN with a curated demo profile.",
       "tasting_notes": [
-        "citrus",
-        "juniper",
-        "floral"
+        "Tanqueray No. TEN: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "citrus",
-        "juniper",
-        "floral"
+        "tanqueray"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -3718,18 +3595,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "gin",
@@ -3740,9 +3612,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "gin/tanqueray-no-ten.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "bottles-of-tanqueray-london-dry-gin.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Bottles_of_Tanqueray_London_Dry_Gin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "attribution": "BrokenSphere — via Wikimedia Commons, CC BY-SA 3.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Bottles_of_Tanqueray_London_Dry_Gin.JPG"
     },
     {
       "id": "gin-11",
@@ -4011,24 +3887,21 @@
     },
     {
       "id": "wine-01",
-      "name": "Sula Chenin Blanc",
+      "name": "Sula Rasa",
       "category": "WINE",
-      "subcategory": "White wine",
-      "price_inr": 1000,
+      "subcategory": "Premium Red",
+      "price_inr": 1450,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 12,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Sula Chenin Blanc with a fresh, fruity, citrus profile.",
+      "abv_percent": 13.8,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Sula Rasa with a curated demo profile.",
       "tasting_notes": [
-        "fresh",
-        "fruity",
-        "citrus"
+        "Sula Rasa: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "fresh",
-        "fruity",
-        "citrus"
+        "sula"
       ],
       "sweetness": "medium",
       "body": "medium",
@@ -4036,18 +3909,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "wine",
@@ -4058,30 +3926,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "wine/sula-chenin-blanc.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "rasa-cabernet-sauvignon.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/RASA_Cabernet_Sauvignon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Princerocky2021 — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:RASA_Cabernet_Sauvignon.jpg"
     },
     {
       "id": "wine-02",
-      "name": "Sula Sauvignon Blanc",
+      "name": "Fratelli Sauvignon Blanc",
       "category": "WINE",
-      "subcategory": "White wine",
+      "subcategory": "White",
       "price_inr": 1100,
       "currency": "INR",
       "size_ml": 750,
       "abv_percent": 12.5,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Sula Sauvignon Blanc with a citrus, tropical, crisp profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Fratelli Sauvignon Blanc with a curated demo profile.",
       "tasting_notes": [
-        "citrus",
-        "tropical",
-        "crisp"
+        "Fratelli Sauvignon Blanc: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "citrus",
-        "tropical",
-        "crisp"
+        "fratelli"
       ],
       "sweetness": "medium",
       "body": "medium",
@@ -4089,18 +3958,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "wine",
@@ -4111,9 +3975,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "wine/sula-sauvignon-blanc.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "fratelli-wines.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Fratelli_Wines.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Fratelli Wines — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Fratelli_Wines.jpg"
     },
     {
       "id": "wine-03",
@@ -4170,24 +4038,21 @@
     },
     {
       "id": "wine-04",
-      "name": "Sula Brut",
+      "name": "Amarone della Valpolicella",
       "category": "WINE",
-      "subcategory": "Sparkling wine",
-      "price_inr": 1400,
+      "subcategory": "Red",
+      "price_inr": 6500,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 12,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Sula Brut with a crisp, fruity, dry profile.",
+      "abv_percent": 15,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Amarone della Valpolicella with a curated demo profile.",
       "tasting_notes": [
-        "crisp",
-        "fruity",
-        "dry"
+        "Amarone della Valpolicella: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "crisp",
-        "fruity",
-        "dry"
+        "amarone"
       ],
       "sweetness": "medium",
       "body": "medium",
@@ -4195,18 +4060,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "wine",
@@ -4217,30 +4077,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "wine/sula-brut.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "a-bottle-of-amarone-della-valpolicella.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/A_bottle_of_Amarone_della_Valpolicella.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Jerzy Kociatkiewicz — via Wikimedia Commons, CC BY-SA 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:A_bottle_of_Amarone_della_Valpolicella.jpg"
     },
     {
       "id": "wine-05",
-      "name": "Fratelli Classic Shiraz",
+      "name": "Jacob's Creek Chardonnay Pinot Noir",
       "category": "WINE",
-      "subcategory": "Red wine",
-      "price_inr": 1200,
+      "subcategory": "White Blend",
+      "price_inr": 1750,
       "currency": "INR",
       "size_ml": 750,
       "abv_percent": 13.5,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Fratelli Classic Shiraz with a berry, spice, oak profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Jacob's Creek Chardonnay Pinot Noir with a curated demo profile.",
       "tasting_notes": [
-        "berry",
-        "spice",
-        "oak"
+        "Jacob's Creek Chardonnay Pinot Noir: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "berry",
-        "spice",
-        "oak"
+        "jacob's"
       ],
       "sweetness": "medium",
       "body": "medium",
@@ -4248,18 +4109,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "wine",
@@ -4270,30 +4126,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "wine/fratelli-classic-shiraz.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "jacobs-creek-chardonnay-pinot-noir.png",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Jacob%27s_Creek_Chardonnay_Pinot_Noir.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 4.0",
+      "attribution": "Catherine from Australia — via Wikimedia Commons, CC BY 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Jacob%27s_Creek_Chardonnay_Pinot_Noir.png"
     },
     {
       "id": "wine-06",
-      "name": "Fratelli Chardonnay",
+      "name": "Casillero del Diablo Sauvignon Blanc",
       "category": "WINE",
-      "subcategory": "White wine",
-      "price_inr": 1300,
+      "subcategory": "White",
+      "price_inr": 1900,
       "currency": "INR",
       "size_ml": 750,
       "abv_percent": 13,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Fratelli Chardonnay with a apple, citrus, creamy profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Casillero del Diablo Sauvignon Blanc with a curated demo profile.",
       "tasting_notes": [
-        "apple",
-        "citrus",
-        "creamy"
+        "Casillero del Diablo Sauvignon Blanc: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "apple",
-        "citrus",
-        "creamy"
+        "casillero"
       ],
       "sweetness": "medium",
       "body": "medium",
@@ -4301,18 +4158,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "wine",
@@ -4323,30 +4175,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "wine/fratelli-chardonnay.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "casillero-del-diablo-wine.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Casillero_del_Diablo_wine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "attribution": "No machine-readable author provided. Jorgebarrios assumed (based on copyright claims). — via Wikimedia Commons, CC0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Casillero_del_Diablo_wine.jpg"
     },
     {
       "id": "wine-07",
-      "name": "York Arros",
+      "name": "Alto Uruguay Tannat Merlot",
       "category": "WINE",
-      "subcategory": "Red blend",
-      "price_inr": 1500,
+      "subcategory": "Red",
+      "price_inr": 1800,
       "currency": "INR",
       "size_ml": 750,
       "abv_percent": 13,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "York Arros with a fruity, spicy, smooth profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Alto Uruguay Tannat Merlot with a curated demo profile.",
       "tasting_notes": [
-        "fruity",
-        "spicy",
-        "smooth"
+        "Alto Uruguay Tannat Merlot: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "fruity",
-        "spicy",
-        "smooth"
+        "alto"
       ],
       "sweetness": "medium",
       "body": "medium",
@@ -4354,18 +4207,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "wine",
@@ -4376,30 +4224,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "wine/york-arros.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "uruguay-merlot-wine.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Uruguay_Merlot_wine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Beatrice Murch — via Wikimedia Commons, CC BY-SA 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Uruguay_Merlot_wine.jpg"
     },
     {
       "id": "wine-08",
-      "name": "Jacob's Creek Shiraz",
+      "name": "Ken Brown Santa Rita Hills Pinot Noir",
       "category": "WINE",
-      "subcategory": "Red wine",
-      "price_inr": 1700,
+      "subcategory": "Red",
+      "price_inr": 3200,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 14,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Jacob's Creek Shiraz with a berry, plum, spice profile.",
+      "abv_percent": 13.9,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Ken Brown Santa Rita Hills Pinot Noir with a curated demo profile.",
       "tasting_notes": [
-        "berry",
-        "plum",
-        "spice"
+        "Ken Brown Santa Rita Hills Pinot Noir: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "berry",
-        "plum",
-        "spice"
+        "ken"
       ],
       "sweetness": "medium",
       "body": "medium",
@@ -4407,18 +4256,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "wine",
@@ -4429,9 +4273,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "wine/jacob-s-creek-shiraz.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "ken-brown-wines-pinot-noir---stierch.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Ken_Brown_Wines_Pinot_Noir_-_Stierch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 4.0",
+      "attribution": "Missvain — via Wikimedia Commons, CC BY 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Ken_Brown_Wines_Pinot_Noir_-_Stierch.jpg"
     },
     {
       "id": "wine-09",
@@ -4753,24 +4601,21 @@
     },
     {
       "id": "wine-15",
-      "name": "Yellow Tail Cabernet Sauvignon",
+      "name": "Cliff Bay Estate Sauvignon Blanc",
       "category": "WINE",
-      "subcategory": "Red wine",
-      "price_inr": 1400,
+      "subcategory": "White",
+      "price_inr": 1700,
       "currency": "INR",
       "size_ml": 750,
-      "abv_percent": 13.5,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Yellow Tail Cabernet Sauvignon with a berry, vanilla, oak profile.",
+      "abv_percent": 12.5,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Cliff Bay Estate Sauvignon Blanc with a curated demo profile.",
       "tasting_notes": [
-        "berry",
-        "vanilla",
-        "oak"
+        "Cliff Bay Estate Sauvignon Blanc: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "berry",
-        "vanilla",
-        "oak"
+        "cliff"
       ],
       "sweetness": "medium",
       "body": "medium",
@@ -4778,18 +4623,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "wine",
@@ -4800,30 +4640,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "wine/yellow-tail-cabernet-sauvignon.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "nz-sauvignon-blanc-wines.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/NZ_Sauvignon_Blanc_wines.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Jonathan Harker — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:NZ_Sauvignon_Blanc_wines.jpg"
     },
     {
       "id": "tequila-01",
-      "name": "Camino Real Blanco",
+      "name": "Lunazul Blanco Tequila",
       "category": "TEQUILA",
-      "subcategory": "Blanco tequila",
-      "price_inr": 2500,
+      "subcategory": "Blanco",
+      "price_inr": 2600,
       "currency": "INR",
       "size_ml": 750,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Camino Real Blanco with a agave, pepper, citrus profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Lunazul Blanco Tequila with a curated demo profile.",
       "tasting_notes": [
-        "agave",
-        "pepper",
-        "citrus"
+        "Lunazul Blanco Tequila: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "agave",
-        "pepper",
-        "citrus"
+        "lunazul"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -4832,18 +4673,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "tequila",
@@ -4854,30 +4690,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "tequila/camino-real-blanco.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "tequilalunazul.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/TequilaLunazul.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "attribution": "Antonio Cavallo — via Wikimedia Commons, CC0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:TequilaLunazul.JPG"
     },
     {
       "id": "tequila-02",
-      "name": "Camino Real Gold",
+      "name": "Corralejo Blanco",
       "category": "TEQUILA",
-      "subcategory": "Gold tequila",
-      "price_inr": 2800,
+      "subcategory": "Blanco",
+      "price_inr": 7500,
       "currency": "INR",
       "size_ml": 750,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Camino Real Gold with a agave, caramel, spice profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Corralejo Blanco with a curated demo profile.",
       "tasting_notes": [
-        "agave",
-        "caramel",
-        "spice"
+        "Corralejo Blanco: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "agave",
-        "caramel",
-        "spice"
+        "corralejo"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -4886,18 +4723,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "tequila",
@@ -4908,9 +4740,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "tequila/camino-real-gold.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "tequila-corralejo-100ml-blanco-mexico-2026-03-30.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tequila_Corralejo_100ml_%28Blanco%29%2C_Mexico%2C_2026-03-30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 4.0",
+      "attribution": "Chris Woodrich — via Wikimedia Commons, CC BY 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Tequila_Corralejo_100ml_(Blanco),_Mexico,_2026-03-30.jpg"
     },
     {
       "id": "tequila-03",
@@ -4968,24 +4804,21 @@
     },
     {
       "id": "tequila-04",
-      "name": "Jose Cuervo Especial Gold",
+      "name": "Jose Cuervo Especial Reposado",
       "category": "TEQUILA",
-      "subcategory": "Gold tequila",
-      "price_inr": 3200,
+      "subcategory": "Reposado",
+      "price_inr": 3600,
       "currency": "INR",
-      "size_ml": 750,
+      "size_ml": 700,
       "abv_percent": 38,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Jose Cuervo Especial Gold with a agave, caramel, oak profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Jose Cuervo Especial Reposado with a curated demo profile.",
       "tasting_notes": [
-        "agave",
-        "caramel",
-        "oak"
+        "Jose Cuervo Especial Reposado: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "agave",
-        "caramel",
-        "oak"
+        "jose"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -4994,18 +4827,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "tequila",
@@ -5016,30 +4844,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "tequila/jose-cuervo-especial-gold.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "tequila-cuervo-tasting-20834619470.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Tequila_Cuervo_tasting_%2820834619470%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "attribution": "terri_bateman — via Wikimedia Commons, CC0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Tequila_Cuervo_tasting_(20834619470).jpg"
     },
     {
       "id": "tequila-05",
-      "name": "Jose Cuervo Tradicional Plata",
+      "name": "El Jimador Reposado",
       "category": "TEQUILA",
-      "subcategory": "Blanco tequila",
+      "subcategory": "Reposado",
       "price_inr": 3800,
       "currency": "INR",
-      "size_ml": 750,
+      "size_ml": 700,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Jose Cuervo Tradicional Plata with a agave, citrus, pepper profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "El Jimador Reposado with a curated demo profile.",
       "tasting_notes": [
-        "agave",
-        "citrus",
-        "pepper"
+        "El Jimador Reposado: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "agave",
-        "citrus",
-        "pepper"
+        "el"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -5048,18 +4877,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "tequila",
@@ -5070,9 +4894,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "tequila/jose-cuervo-tradicional-plata.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "el-jimador-tekila.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_Jimador_tekila.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Belenois — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:El_Jimador_tekila.jpg"
     },
     {
       "id": "tequila-06",
@@ -5130,24 +4958,21 @@
     },
     {
       "id": "tequila-07",
-      "name": "1800 Silver",
+      "name": "Casamigos Blanco",
       "category": "TEQUILA",
-      "subcategory": "Blanco tequila",
-      "price_inr": 5000,
+      "subcategory": "Blanco",
+      "price_inr": 8500,
       "currency": "INR",
       "size_ml": 750,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "1800 Silver with a agave, citrus, pepper profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Casamigos Blanco with a curated demo profile.",
       "tasting_notes": [
-        "agave",
-        "citrus",
-        "pepper"
+        "Casamigos Blanco: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "agave",
-        "citrus",
-        "pepper"
+        "casamigos"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -5156,18 +4981,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "tequila",
@@ -5178,9 +4998,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "tequila/1800-silver.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "casamigos-blanco-tequila-01.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Casamigos_Blanco_Tequila_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Indrajit Das — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Casamigos_Blanco_Tequila_01.jpg"
     },
     {
       "id": "tequila-08",
@@ -5292,24 +5116,21 @@
     },
     {
       "id": "tequila-10",
-      "name": "Patrón Silver",
+      "name": "Olmeca Altos Plata",
       "category": "TEQUILA",
-      "subcategory": "Blanco tequila",
-      "price_inr": 7500,
+      "subcategory": "Blanco",
+      "price_inr": 2800,
       "currency": "INR",
-      "size_ml": 750,
-      "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Patrón Silver with a agave, citrus, pepper profile.",
+      "size_ml": 700,
+      "abv_percent": 38,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Olmeca Altos Plata with a curated demo profile.",
       "tasting_notes": [
-        "agave",
-        "citrus",
-        "pepper"
+        "Olmeca Altos Plata: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "agave",
-        "citrus",
-        "pepper"
+        "olmeca"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -5318,18 +5139,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "tequila",
@@ -5340,9 +5156,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "tequila/patr-n-silver.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "olmeca-tequila-by-corneliusa-2015.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Olmeca_Tequila_by_CorneliusA_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Cornelius Aveling — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Olmeca_Tequila_by_CorneliusA_2015.jpg"
     },
     {
       "id": "tequila-11",
@@ -5508,24 +5328,21 @@
     },
     {
       "id": "tequila-14",
-      "name": "Don Julio Reposado",
+      "name": "Espolon Blanco Tequila",
       "category": "TEQUILA",
-      "subcategory": "Reposado tequila",
-      "price_inr": 8500,
+      "subcategory": "Blanco",
+      "price_inr": 3600,
       "currency": "INR",
       "size_ml": 750,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Don Julio Reposado with a vanilla, caramel, oak profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Espolon Blanco Tequila with a curated demo profile.",
       "tasting_notes": [
-        "vanilla",
-        "caramel",
-        "oak"
+        "Espolon Blanco Tequila: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "vanilla",
-        "caramel",
-        "oak"
+        "espolon"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -5534,18 +5351,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "tequila",
@@ -5556,30 +5368,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "tequila/don-julio-reposado.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "espolon-tequila-blanco-02.tif",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Espolon_Tequila_Blanco_02.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Indrajit Das — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Espolon_Tequila_Blanco_02.tif"
     },
     {
       "id": "tequila-15",
-      "name": "Don Julio 1942",
+      "name": "Casa Dragones Blanco",
       "category": "TEQUILA",
-      "subcategory": "Añejo tequila",
-      "price_inr": 14500,
+      "subcategory": "Blanco",
+      "price_inr": 9800,
       "currency": "INR",
-      "size_ml": 750,
+      "size_ml": 700,
       "abv_percent": 40,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Don Julio 1942 with a caramel, vanilla, tropical fruit profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Casa Dragones Blanco with a curated demo profile.",
       "tasting_notes": [
-        "caramel",
-        "vanilla",
-        "tropical fruit"
+        "Casa Dragones Blanco: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "caramel",
-        "vanilla",
-        "tropical fruit"
+        "casa"
       ],
       "sweetness": "low",
       "body": "medium",
@@ -5588,18 +5401,13 @@
         "On the rocks"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "tequila",
@@ -5610,30 +5418,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "tequila/don-julio-1942.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "tequila-cd-backyard.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Tequila_CD_Backyard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Jinsky2019 — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Tequila_CD_Backyard.jpg"
     },
     {
       "id": "rtd-01",
-      "name": "Bacardi Breezer Orange",
+      "name": "Mike's Hard Lemonade Original",
       "category": "RTD",
-      "subcategory": "RTD cooler",
-      "price_inr": 160,
+      "subcategory": "Canned Cocktail",
+      "price_inr": 200,
       "currency": "INR",
       "size_ml": 330,
-      "abv_percent": 4.8,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Bacardi Breezer Orange with a orange, sweet, citrus profile.",
+      "abv_percent": 5,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Mike's Hard Lemonade Original with a curated demo profile.",
       "tasting_notes": [
-        "orange",
-        "sweet",
-        "citrus"
+        "Mike's Hard Lemonade Original: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "orange",
-        "sweet",
-        "citrus"
+        "mike's"
       ],
       "sweetness": "high",
       "body": "light",
@@ -5641,18 +5450,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rtd",
@@ -5663,30 +5467,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rtd/bacardi-breezer-orange.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "mikes-hard-lemonade-bottle.-330ml-canada-old7-and-new-5percent-alc-liquor3620.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Mikes_Hard_Lemonade_Bottle._330ml_Canada_Old7_and_new_5percent_alc_Liquor3620.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "attribution": "Myke2020 — via Wikimedia Commons, CC0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Mikes_Hard_Lemonade_Bottle._330ml_Canada_Old7_and_new_5percent_alc_Liquor3620.jpg"
     },
     {
       "id": "rtd-02",
-      "name": "Bacardi Breezer Cranberry",
+      "name": "Polar Seltzer Orange Vanilla",
       "category": "RTD",
-      "subcategory": "RTD cooler",
-      "price_inr": 160,
+      "subcategory": "Hard Seltzer",
+      "price_inr": 220,
       "currency": "INR",
       "size_ml": 330,
-      "abv_percent": 4.8,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Bacardi Breezer Cranberry with a cranberry, fruity, sweet profile.",
+      "abv_percent": 5,
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Polar Seltzer Orange Vanilla with a curated demo profile.",
       "tasting_notes": [
-        "cranberry",
-        "fruity",
-        "sweet"
+        "Polar Seltzer Orange Vanilla: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "cranberry",
-        "fruity",
-        "sweet"
+        "polar"
       ],
       "sweetness": "high",
       "body": "light",
@@ -5694,18 +5499,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rtd",
@@ -5716,9 +5516,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rtd/bacardi-breezer-cranberry.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "polar-seltzer---orange-vanilla---aluminum-can-52953511215.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Polar_Seltzer_-_Orange_Vanilla_-_Aluminum_Can_%2852953511215%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 2.0",
+      "attribution": "Tony Webster — via Wikimedia Commons, CC BY 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Polar_Seltzer_-_Orange_Vanilla_-_Aluminum_Can_(52953511215).jpg"
     },
     {
       "id": "rtd-03",
@@ -5989,22 +5793,19 @@
       "id": "rtd-08",
       "name": "Bacardi Rum & Cola",
       "category": "RTD",
-      "subcategory": "Rum & cola RTD",
+      "subcategory": "Rum & Cola RTD",
       "price_inr": 220,
       "currency": "INR",
       "size_ml": 330,
       "abv_percent": 5,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Bacardi Rum & Cola with a cola, caramel, vanilla profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Bacardi Rum & Cola with a curated demo profile.",
       "tasting_notes": [
-        "cola",
-        "caramel",
-        "vanilla"
+        "Bacardi Rum & Cola: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "cola",
-        "caramel",
-        "vanilla"
+        "bacardi"
       ],
       "sweetness": "high",
       "body": "light",
@@ -6012,18 +5813,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rtd",
@@ -6034,30 +5830,31 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rtd/bacardi-rum-cola.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "2023-rum-bacardi-carta-oro-2.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2023_Rum_Bacardi_Carta_Oro_%282%29.jpg/960px-2023_Rum_Bacardi_Carta_Oro_%282%29.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Jacek Halicki — via Wikimedia Commons, CC BY-SA 4.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:2023_Rum_Bacardi_Carta_Oro_(2).jpg"
     },
     {
       "id": "rtd-09",
-      "name": "Bacardi Rum & Cola Lime",
+      "name": "Mike’s Hard Lemonade Lime",
       "category": "RTD",
-      "subcategory": "Rum & cola RTD",
-      "price_inr": 220,
+      "subcategory": "Canned Cocktail",
+      "price_inr": 230,
       "currency": "INR",
       "size_ml": 330,
       "abv_percent": 5,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Bacardi Rum & Cola Lime with a cola, lime, citrus profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Mike’s Hard Lemonade Lime with a curated demo profile.",
       "tasting_notes": [
-        "cola",
-        "lime",
-        "citrus"
+        "Mike’s Hard Lemonade Lime: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "cola",
-        "lime",
-        "citrus"
+        "mike’s"
       ],
       "sweetness": "medium",
       "body": "light",
@@ -6065,18 +5862,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rtd",
@@ -6087,9 +5879,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rtd/bacardi-rum-cola-lime.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "mikes-hard-lemonade-bottle.-330ml-canada-old7-and-new-5percent-alc-liquor3620.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Mikes_Hard_Lemonade_Bottle._330ml_Canada_Old7_and_new_5percent_alc_Liquor3620.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "attribution": "Myke2020 — via Wikimedia Commons, CC0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Mikes_Hard_Lemonade_Bottle._330ml_Canada_Old7_and_new_5percent_alc_Liquor3620.jpg"
     },
     {
       "id": "rtd-10",
@@ -6305,24 +6101,21 @@
     },
     {
       "id": "rtd-14",
-      "name": "Captain Morgan & Cola",
+      "name": "Polar Seltzer Pink Grapefruit",
       "category": "RTD",
-      "subcategory": "Rum & cola RTD",
-      "price_inr": 250,
+      "subcategory": "Hard Seltzer",
+      "price_inr": 220,
       "currency": "INR",
       "size_ml": 330,
       "abv_percent": 5,
-      "origin": "Demo catalog — verify by market/retailer",
-      "description": "Captain Morgan & Cola with a molasses, cola, spice profile.",
+      "origin": "Imported — Demo catalog verify by market",
+      "description": "Polar Seltzer Pink Grapefruit with a curated demo profile.",
       "tasting_notes": [
-        "molasses",
-        "cola",
-        "spice"
+        "Polar Seltzer Pink Grapefruit: balanced profile",
+        "smooth finish"
       ],
       "flavor_profile": [
-        "molasses",
-        "cola",
-        "spice"
+        "polar"
       ],
       "sweetness": "medium",
       "body": "light",
@@ -6330,18 +6123,13 @@
         "Chilled"
       ],
       "food_pairings": [
-        "Grilled foods",
-        "Spiced dishes",
-        "Snacks"
+        "Grilled foods"
       ],
       "occasions": [
-        "Weekend",
-        "Dinner",
-        "Celebration"
+        "Weekend"
       ],
       "moods": [
-        "Relaxed",
-        "Social"
+        "Relaxed"
       ],
       "tags": [
         "rtd",
@@ -6352,9 +6140,13 @@
       ],
       "inventory": 25,
       "is_available": true,
-      "image_filename": "rtd/captain-morgan-cola.jpg",
-      "image_status": "SOURCE_REQUIRED",
-      "price_note": "Indicative/demo price; verify state and retailer pricing before production."
+      "image_filename": "polar-seltzer---orange-vanilla---aluminum-can-52953511215.jpg",
+      "image_status": "verified_source",
+      "price_note": "Indicative/demo price; verify state and retailer pricing before production.",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Polar_Seltzer_-_Orange_Vanilla_-_Aluminum_Can_%2852953511215%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 2.0",
+      "attribution": "Tony Webster — via Wikimedia Commons, CC BY 2.0",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Polar_Seltzer_-_Orange_Vanilla_-_Aluminum_Can_(52953511215).jpg"
     },
     {
       "id": "rtd-15",

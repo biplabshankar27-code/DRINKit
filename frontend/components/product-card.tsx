@@ -8,6 +8,8 @@ import { useCartStore } from '@/store/cart';
 import { useWishlistStore } from '@/store/wishlist';
 import type { CartTotals, Product } from '@/lib/types';
 
+const imageSrc = (image: string): string => (image.startsWith('/images/') ? image : image);
+
 export function ProductCard({ product, onAdd }: { product: Product; onAdd?: (line: { productId: string }) => void }) {
   const token = useAuthStore((s) => s.token);
   const cart = useCartStore((s) => s.cart);
@@ -48,7 +50,7 @@ export function ProductCard({ product, onAdd }: { product: Product; onAdd?: (lin
     <div className="card flex flex-col overflow-hidden">
       <Link href={`/product/${product._id}`} className="relative block aspect-3/4 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={product.image} alt={product.name} className="h-full w-full object-cover transition hover:scale-105" />
+        <img src={imageSrc(product.image)} alt={product.name} className="h-full w-full object-cover transition hover:scale-105" />
         {outOfStock && (
           <span className="absolute top-3 left-3 rounded-full bg-black/80 px-2 py-1 text-xs font-semibold text-red-300">
             Out of stock

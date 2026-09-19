@@ -87,3 +87,7 @@ Optional env: `NEXT_PUBLIC_API_URL=http://localhost:4000/api`, `NEXT_PUBLIC_WS_U
 - AI chat is OpenAI-SDK compatible: `baseURL: https://api.groq.com/openai/v1`, `apiKey: $GROQ_API_KEY`, model `openai/gpt-oss-120b` (see `backend/src/modules/ai-assistant/ai-assistant.service.ts`).
 - Payments are mocked for the MVP; Razorpay wiring point is `backend/src/modules/payments/payments.service.ts`.
 - Never commit `.env` or key files.
+
+## Product images
+
+113 of 120 products use real product photos downloaded from Wikimedia Commons (CC0/CC BY/CC BY-SA) — see DRINKit-product-catalog/data/substitutions-plan.md and attribution/IMAGE-CREDITS.md for licensing. Remaining 7 product rows render branded placeholders until licensed assets are sourced. Images live in frontend/public/images (copyright/licensing respects Commons attribution rows in the manifest).

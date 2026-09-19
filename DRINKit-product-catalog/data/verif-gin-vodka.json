@@ -1,0 +1,639 @@
+{
+  "generated_at": "2026-09-19T02:02:47.641Z",
+  "counts": {
+    "eligible": 25,
+    "needsHuman": 4,
+    "noCandidate": 1
+  },
+  "products": [
+    {
+      "id": "vodka-01",
+      "name": "Magic Moments Premium",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Magic Moments Vodka.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Magic_Moments_Vodka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Magic_Moments_Vodka.jpg/960px-Magic_Moments_Vodka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Magic_Moments_Vodka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Magic_Moments_Vodka.jpg",
+        "licenseResolved": "CC BY-SA 3.0",
+        "licenseTag": "CC BY-SA 3.0",
+        "artist": "Deepak G Goswami",
+        "credit": "Own work",
+        "width": 3242,
+        "height": 4322,
+        "attribution": "Deepak G Goswami — via Wikimedia Commons, CC BY-SA 3.0"
+      },
+      "candidateCount": 14
+    },
+    {
+      "id": "vodka-02",
+      "name": "Smirnoff No.21",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Smirnoff Vodka bottle top with excise stamp 2.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Smirnoff_Vodka_bottle_top_with_excise_stamp_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Smirnoff_Vodka_bottle_top_with_excise_stamp_2.jpg/960px-Smirnoff_Vodka_bottle_top_with_excise_stamp_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Smirnoff_Vodka_bottle_top_with_excise_stamp_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Smirnoff_Vodka_bottle_top_with_excise_stamp_2.jpg",
+        "licenseResolved": "CC BY-SA 4.0",
+        "licenseTag": "CC BY-SA 4.0",
+        "artist": "Alex P. Kok",
+        "credit": "Own work",
+        "width": 6000,
+        "height": 4000,
+        "attribution": "Alex P. Kok — via Wikimedia Commons, CC BY-SA 4.0"
+      },
+      "candidateCount": 9
+    },
+    {
+      "id": "vodka-03",
+      "name": "Absolut Original",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Absolut Vodka 01.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Absolut_Vodka_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Absolut_Vodka_01.jpg/960px-Absolut_Vodka_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Absolut_Vodka_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Absolut_Vodka_01.jpg",
+        "licenseResolved": "CC BY-SA 4.0",
+        "licenseTag": "CC BY-SA 4.0",
+        "artist": "Indrajit Das",
+        "credit": "Own work",
+        "width": 3024,
+        "height": 4032,
+        "attribution": "Indrajit Das — via Wikimedia Commons, CC BY-SA 4.0"
+      },
+      "candidateCount": 10
+    },
+    {
+      "id": "vodka-04",
+      "name": "Absolut Citron",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Absolut Vodka -pulloja.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Absolut_Vodka_-pulloja.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Absolut_Vodka_-pulloja.jpg/960px-Absolut_Vodka_-pulloja.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Absolut_Vodka_-pulloja.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Absolut_Vodka_-pulloja.jpg",
+        "licenseResolved": "CC BY-SA 4.0",
+        "licenseTag": "CC BY-SA 4.0",
+        "artist": "Jjanhone",
+        "credit": "Own work",
+        "width": 3000,
+        "height": 4000,
+        "attribution": "Jjanhone — via Wikimedia Commons, CC BY-SA 4.0"
+      },
+      "candidateCount": 14
+    },
+    {
+      "id": "vodka-05",
+      "name": "Absolut Raspberry",
+      "status": "needs-human",
+      "chosen": {
+        "rejectReasons": [
+          {
+            "title": "File:New illustrated and descriptive catalog of fruit and ornamental trees, small fruits, shrubs, vines and roses - the Villa Nurseries. (IA CAT31311331).pdf",
+            "reason": "title not matching product",
+            "license": "Public domain"
+          },
+          {
+            "title": "File:Zeitschrift für Pflanzenkrankheiten (IA zeitschriftfrp04stut).pdf",
+            "reason": "title not matching product",
+            "license": "Public domain"
+          },
+          {
+            "title": "File:Atlas of diseases of the skin, including an epitome of pathology and treatment (IA atlasofdiseaseso00mraeuoft).pdf",
+            "reason": "title not matching product",
+            "license": "Public domain"
+          },
+          {
+            "title": "File:The testing of chemical reagents for purity (IA testingofchemica00kraurich).pdf",
+            "reason": "title not matching product",
+            "license": "Public domain"
+          },
+          {
+            "title": "File:The Principia (IA 8c4fa929-bd16-4baf-9459-1f7198680113).pdf",
+            "reason": "title not matching product",
+            "license": "Public domain"
+          }
+        ]
+      },
+      "candidateCount": 9
+    },
+    {
+      "id": "vodka-06",
+      "name": "Ketel One",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Ketel Marte (48301189771).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Ketel_Marte_%2848301189771%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Ketel_Marte_%2848301189771%29.jpg/960px-Ketel_Marte_%2848301189771%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Ketel_Marte_%2848301189771%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Ketel_Marte_(48301189771).jpg",
+        "licenseResolved": "CC BY-SA 2.0",
+        "licenseTag": "CC BY-SA 2.0",
+        "artist": "Ian D'Andrea from Philadelphia, PA",
+        "credit": "Ketel Marte",
+        "width": 6000,
+        "height": 4000,
+        "attribution": "Ian D'Andrea from Philadelphia, PA — via Wikimedia Commons, CC BY-SA 2.0"
+      },
+      "candidateCount": 13
+    },
+    {
+      "id": "vodka-07",
+      "name": "Finlandia Vodka",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Finlandia Vodka Splash.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Finlandia_Vodka_Splash.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Finlandia_Vodka_Splash.jpg/960px-Finlandia_Vodka_Splash.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Finlandia_Vodka_Splash.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Finlandia_Vodka_Splash.jpg",
+        "licenseResolved": "CC BY-SA 3.0",
+        "licenseTag": "CC BY-SA 3.0",
+        "artist": "Catalin gafton",
+        "credit": "Was taken with Catalin gafton's own photo camera.",
+        "width": 2903,
+        "height": 4383,
+        "attribution": "Catalin gafton — via Wikimedia Commons, CC BY-SA 3.0"
+      },
+      "candidateCount": 10
+    },
+    {
+      "id": "vodka-08",
+      "name": "Grey Goose",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Grey Goose Original Vodka 01.tif",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Grey_Goose_Original_Vodka_01.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Grey_Goose_Original_Vodka_01.tif/lossy-page1-960px-Grey_Goose_Original_Vodka_01.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Grey_Goose_Original_Vodka_01.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Grey_Goose_Original_Vodka_01.tif",
+        "licenseResolved": "CC BY-SA 4.0",
+        "licenseTag": "CC BY-SA 4.0",
+        "artist": "Indrajit Das",
+        "credit": "Own work",
+        "width": 2550,
+        "height": 4943,
+        "attribution": "Indrajit Das — via Wikimedia Commons, CC BY-SA 4.0"
+      },
+      "candidateCount": 10
+    },
+    {
+      "id": "vodka-09",
+      "name": "Belvedere",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Belvedere Vodka at Red Square in Mandalay Bay (14858479551).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Belvedere_Vodka_at_Red_Square_in_Mandalay_Bay_%2814858479551%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Belvedere_Vodka_at_Red_Square_in_Mandalay_Bay_%2814858479551%29.jpg/960px-Belvedere_Vodka_at_Red_Square_in_Mandalay_Bay_%2814858479551%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Belvedere_Vodka_at_Red_Square_in_Mandalay_Bay_%2814858479551%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Belvedere_Vodka_at_Red_Square_in_Mandalay_Bay_(14858479551).jpg",
+        "licenseResolved": "CC BY 2.0",
+        "licenseTag": "CC BY 2.0",
+        "artist": "Nan Palmero from San Antonio, TX, USA",
+        "credit": "Belvedere Vodka at Red Square in Mandalay Bay",
+        "width": 3648,
+        "height": 3648,
+        "attribution": "Nan Palmero from San Antonio, TX, USA — via Wikimedia Commons, CC BY 2.0"
+      },
+      "candidateCount": 17
+    },
+    {
+      "id": "vodka-10",
+      "name": "Cîroc",
+      "status": "needs-human",
+      "chosen": {
+        "rejectReasons": [
+          {
+            "title": "File:Venus thistle.jpg",
+            "reason": "title not matching product",
+            "license": "CC BY-SA 2.5"
+          },
+          {
+            "title": "File:The impeachapple emperor- made with a shot of peach Ciroc and a bottle of angry orchard or your favorite hard cider- This cocktail is also known as I M E M- Created on a an emperor island raft, a handful of fr 2014-07-04 23-54.jpg",
+            "reason": "title not matching product",
+            "license": "CC BY-SA 3.0"
+          },
+          {
+            "title": "File:Brannigan's, Romford, RM1 (8558678951).jpg",
+            "reason": "title not matching product",
+            "license": "CC BY-SA 2.0"
+          },
+          {
+            "title": "File:170411 822 Encinitas - San Diego Botanic Gdn, California Gardenscapes, Verbena lilacina Lilac Verbena, Cirsium occidentale Cobweb Thistle (33777255983).jpg",
+            "reason": "title not matching product",
+            "license": "CC BY 2.0"
+          },
+          {
+            "title": "File:Jake T Austin, arrives at the CIROC tasting event in Los Angeles, Nov 2018.jpg",
+            "reason": "title not matching product",
+            "license": "Public domain"
+          }
+        ]
+      },
+      "candidateCount": 10
+    },
+    {
+      "id": "vodka-11",
+      "name": "Beluga Noble",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Delphinapterus leucas beluga MNHN.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Delphinapterus_leucas_beluga_MNHN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Delphinapterus_leucas_beluga_MNHN.jpg/960px-Delphinapterus_leucas_beluga_MNHN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Delphinapterus_leucas_beluga_MNHN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Delphinapterus_leucas_beluga_MNHN.jpg",
+        "licenseResolved": "CC0",
+        "licenseTag": "CC0",
+        "artist": "Jebulon",
+        "credit": "Own work",
+        "width": 4084,
+        "height": 2500,
+        "attribution": "Jebulon — via Wikimedia Commons, CC0"
+      },
+      "candidateCount": 12
+    },
+    {
+      "id": "vodka-12",
+      "name": "Smoke Lab Classic",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Developing baselines for prescribed burning smoke management plans and best management practices - USACE-p266001coll1-3620.pdf",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Developing_baselines_for_prescribed_burning_smoke_management_plans_and_best_management_practices_-_USACE-p266001coll1-3620.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Developing_baselines_for_prescribed_burning_smoke_management_plans_and_best_management_practices_-_USACE-p266001coll1-3620.pdf/page1-960px-Developing_baselines_for_prescribed_burning_smoke_management_plans_and_best_management_practices_-_USACE-p266001coll1-3620.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Developing_baselines_for_prescribed_burning_smoke_management_plans_and_best_management_practices_-_USACE-p266001coll1-3620.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Developing_baselines_for_prescribed_burning_smoke_management_plans_and_best_management_practices_-_USACE-p266001coll1-3620.pdf",
+        "licenseResolved": "CC0",
+        "licenseTag": "Public domain",
+        "artist": "United States. Army. Corps of Engineers; Engineer Research and Development Center (U.S.); Construction Engineering Research Laboratory (U.S.); OACSIM Environmental Quality Program Studies (U.S.)",
+        "credit": "https://usace.contentdm.oclc.org/digital/collection/p266001coll1/id/3620",
+        "width": 1275,
+        "height": 1650,
+        "attribution": "United States. Army. Corps of Engineers; Engineer Research and Development Center (U.S.); Construction Engineering Research Laboratory (U.S.); OACSIM Environmental Quality Program Studies (U.S.) — via Wikimedia Commons, CC0"
+      },
+      "candidateCount": 17
+    },
+    {
+      "id": "vodka-13",
+      "name": "Smoke Lab Pink",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:The development of a standard reference material for calibration of the University of Pittsburgh smoke toxicity method for assessing the acute inhalation toxicity of combustion products (IA jresv97n2p245).pdf",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/The_development_of_a_standard_reference_material_for_calibration_of_the_University_of_Pittsburgh_smoke_toxicity_method_for_assessing_the_acute_inhalation_toxicity_of_combustion_products_%28IA_jresv97n2p245%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/The_development_of_a_standard_reference_material_for_calibration_of_the_University_of_Pittsburgh_smoke_toxicity_method_for_assessing_the_acute_inhalation_toxicity_of_combustion_products_%28IA_jresv97n2p245%29.pdf/page1-960px-thumbnail.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/The_development_of_a_standard_reference_material_for_calibration_of_the_University_of_Pittsburgh_smoke_toxicity_method_for_assessing_the_acute_inhalation_toxicity_of_combustion_products_%28IA_jresv97n2p245%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:The_development_of_a_standard_reference_material_for_calibration_of_the_University_of_Pittsburgh_smoke_toxicity_method_for_assessing_the_acute_inhalation_toxicity_of_combustion_products_(IA_jresv97n2p245).pdf",
+        "licenseResolved": "CC0",
+        "licenseTag": "Public domain",
+        "artist": "Levin, B.C. Alarie, Y. Schiller, S.B. Stock, M.F.",
+        "credit": "Internet Archive identifier: jresv97n2p245 https://archive.org/download/jresv97n2p245/jresv97n2p245_A1b.pdf",
+        "width": 1258,
+        "height": 1641,
+        "attribution": "Levin, B.C. Alarie, Y. Schiller, S.B. Stock, M.F. — via Wikimedia Commons, CC0"
+      },
+      "candidateCount": 16
+    },
+    {
+      "id": "vodka-14",
+      "name": "Stolichnaya Premium",
+      "status": "needs-human",
+      "chosen": {
+        "rejectReasons": [
+          {
+            "title": "File:Aerobatics (5171559819).jpg",
+            "reason": "title not matching product",
+            "license": "CC BY-SA 2.0"
+          }
+        ]
+      },
+      "candidateCount": 1
+    },
+    {
+      "id": "vodka-15",
+      "name": "3 Kilos Vodka",
+      "status": "needs-human",
+      "chosen": {
+        "rejectReasons": [
+          {
+            "title": "File:Anet - La Perse en automobile à travers la Russie et la Caucase, 1900.djvu",
+            "reason": "title not matching product",
+            "license": "Public domain"
+          },
+          {
+            "title": "File:Claude ANET-les rose d Ispahan la perse en automobile.djvu",
+            "reason": "title not matching product",
+            "license": "Public domain"
+          },
+          {
+            "title": "File:Documents about Martin Luther King, Jr., Executive Order 14176, 173-mx-1-1a sec 001 ser 1a1-1a23-part 2 of 3.pdf",
+            "reason": "title not matching product",
+            "license": "Public domain"
+          },
+          {
+            "title": "File:Documents about Martin Luther King, Jr., Executive Order 14176, 173-mx-1-a sec 001 ser 1-part 1 of 3.pdf",
+            "reason": "title not matching product",
+            "license": "Public domain"
+          },
+          {
+            "title": "File:Documents about Martin Luther King, Jr., Executive Order 14176, 173-mx-1-a sec 001 ser 1-part 2 of 3.pdf",
+            "reason": "title not matching product",
+            "license": "Public domain"
+          }
+        ]
+      },
+      "candidateCount": 17
+    },
+    {
+      "id": "gin-01",
+      "name": "Greater Than London Dry Gin",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:A hole to creep out at from the late Act of Parliament against geneva and other spirituous liquors by a new dram far better than gin and a new punch far wholesomer than either brandy (IA 2681761R.nlm.nih.gov).pdf",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/A_hole_to_creep_out_at_from_the_late_Act_of_Parliament_against_geneva_and_other_spirituous_liquors_by_a_new_dram_far_better_than_gin_and_a_new_punch_far_wholesomer_than_either_brandy_%28IA_2681761R.nlm.nih.gov%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/A_hole_to_creep_out_at_from_the_late_Act_of_Parliament_against_geneva_and_other_spirituous_liquors_by_a_new_dram_far_better_than_gin_and_a_new_punch_far_wholesomer_than_either_brandy_%28IA_2681761R.nlm.nih.gov%29.pdf/page1-500px-thumbnail.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/A_hole_to_creep_out_at_from_the_late_Act_of_Parliament_against_geneva_and_other_spirituous_liquors_by_a_new_dram_far_better_than_gin_and_a_new_punch_far_wholesomer_than_either_brandy_%28IA_2681761R.nlm.nih.gov%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:A_hole_to_creep_out_at_from_the_late_Act_of_Parliament_against_geneva_and_other_spirituous_liquors_by_a_new_dram_far_better_than_gin_and_a_new_punch_far_wholesomer_than_either_brandy_(IA_2681761R.nlm.nih.gov).pdf",
+        "licenseResolved": "CC0",
+        "licenseTag": "Public domain",
+        "artist": "",
+        "credit": "Internet Archive identifier: 2681761R.nlm.nih.gov https://archive.org/download/2681761R.nlm.nih.gov/2681761R.pdf",
+        "width": 547,
+        "height": 943,
+        "attribution": "Internet Archive identifier: 2681761R.nlm.nih.gov https://archive.org/download/2681761R.nlm.nih.gov/2681761R.pdf — via Wikimedia Commons, CC0"
+      },
+      "candidateCount": 18
+    },
+    {
+      "id": "gin-02",
+      "name": "Gordon's London Dry Gin",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:HK SKD 日出康城 Lohas park 商場 mall shop 食品超級市場 Fresh Food Supermarket goods 酒類 wine bottles April 2022 Px3 Rum n Gordon's London Dry Gin.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/HK_SKD_%E6%97%A5%E5%87%BA%E5%BA%B7%E5%9F%8E_Lohas_park_%E5%95%86%E5%A0%B4_mall_shop_%E9%A3%9F%E5%93%81%E8%B6%85%E7%B4%9A%E5%B8%82%E5%A0%B4_Fresh_Food_Supermarket_goods_%E9%85%92%E9%A1%9E_wine_bottles_April_2022_Px3_Rum_n_Gordon%27s_London_Dry_Gin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/HK_SKD_%E6%97%A5%E5%87%BA%E5%BA%B7%E5%9F%8E_Lohas_park_%E5%95%86%E5%A0%B4_mall_shop_%E9%A3%9F%E5%93%81%E8%B6%85%E7%B4%9A%E5%B8%82%E5%A0%B4_Fresh_Food_Supermarket_goods_%E9%85%92%E9%A1%9E_wine_bottles_April_2022_Px3_Rum_n_Gordon%27s_London_Dry_Gin.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/HK_SKD_%E6%97%A5%E5%87%BA%E5%BA%B7%E5%9F%8E_Lohas_park_%E5%95%86%E5%A0%B4_mall_shop_%E9%A3%9F%E5%93%81%E8%B6%85%E7%B4%9A%E5%B8%82%E5%A0%B4_Fresh_Food_Supermarket_goods_%E9%85%92%E9%A1%9E_wine_bottles_April_2022_Px3_Rum_n_Gordon%27s_London_Dry_Gin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:HK_SKD_%E6%97%A5%E5%87%BA%E5%BA%B7%E5%9F%8E_Lohas_park_%E5%95%86%E5%A0%B4_mall_shop_%E9%A3%9F%E5%93%81%E8%B6%85%E7%B4%9A%E5%B8%82%E5%A0%B4_Fresh_Food_Supermarket_goods_%E9%85%92%E9%A1%9E_wine_bottles_April_2022_Px3_Rum_n_Gordon%27s_London_Dry_Gin.jpg",
+        "licenseResolved": "CC BY-SA 4.0",
+        "licenseTag": "CC BY-SA 4.0",
+        "artist": "Houstomwinsha Konglampo",
+        "credit": "Own work",
+        "width": 4000,
+        "height": 3000,
+        "attribution": "Houstomwinsha Konglampo — via Wikimedia Commons, CC BY-SA 4.0"
+      },
+      "candidateCount": 16
+    },
+    {
+      "id": "gin-03",
+      "name": "Beefeater London Dry",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Entrance to Beefeater Gin Distillery, Kennington Road London - geograph.org.uk - 1792834.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Entrance_to_Beefeater_Gin_Distillery%2C_Kennington_Road_London_-_geograph.org.uk_-_1792834.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Entrance_to_Beefeater_Gin_Distillery%2C_Kennington_Road_London_-_geograph.org.uk_-_1792834.jpg/960px-Entrance_to_Beefeater_Gin_Distillery%2C_Kennington_Road_London_-_geograph.org.uk_-_1792834.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Entrance_to_Beefeater_Gin_Distillery%2C_Kennington_Road_London_-_geograph.org.uk_-_1792834.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Entrance_to_Beefeater_Gin_Distillery,_Kennington_Road_London_-_geograph.org.uk_-_1792834.jpg",
+        "licenseResolved": "CC BY-SA 2.0",
+        "licenseTag": "CC BY-SA 2.0",
+        "artist": "PAUL FARMER",
+        "credit": "Geograph Britain and Ireland",
+        "width": 3264,
+        "height": 2448,
+        "attribution": "PAUL FARMER — via Wikimedia Commons, CC BY-SA 2.0"
+      },
+      "candidateCount": 17
+    },
+    {
+      "id": "gin-04",
+      "name": "Bombay Sapphire",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Bombay Sapphire Bramble Gin 01.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Bombay_Sapphire_Bramble_Gin_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Bombay_Sapphire_Bramble_Gin_01.jpg/960px-Bombay_Sapphire_Bramble_Gin_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Bombay_Sapphire_Bramble_Gin_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Bombay_Sapphire_Bramble_Gin_01.jpg",
+        "licenseResolved": "CC BY-SA 4.0",
+        "licenseTag": "CC BY-SA 4.0",
+        "artist": "Indrajit Das",
+        "credit": "Own work",
+        "width": 3024,
+        "height": 4032,
+        "attribution": "Indrajit Das — via Wikimedia Commons, CC BY-SA 4.0"
+      },
+      "candidateCount": 16
+    },
+    {
+      "id": "gin-05",
+      "name": "Tanqueray London Dry",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Bottles of Tanqueray London Dry Gin.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Bottles_of_Tanqueray_London_Dry_Gin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Bottles_of_Tanqueray_London_Dry_Gin.JPG/960px-Bottles_of_Tanqueray_London_Dry_Gin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Bottles_of_Tanqueray_London_Dry_Gin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Bottles_of_Tanqueray_London_Dry_Gin.JPG",
+        "licenseResolved": "CC BY-SA 3.0",
+        "licenseTag": "CC BY-SA 3.0",
+        "artist": "BrokenSphere",
+        "credit": "Own work",
+        "width": 4000,
+        "height": 3000,
+        "attribution": "BrokenSphere — via Wikimedia Commons, CC BY-SA 3.0"
+      },
+      "candidateCount": 13
+    },
+    {
+      "id": "gin-06",
+      "name": "Stranger & Sons",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:1916. The Mysterious Stranger.djvu",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/1916._The_Mysterious_Stranger.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/1916._The_Mysterious_Stranger.djvu/page1-960px-1916._The_Mysterious_Stranger.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/1916._The_Mysterious_Stranger.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:1916._The_Mysterious_Stranger.djvu",
+        "licenseResolved": "CC0",
+        "licenseTag": "Public domain",
+        "artist": "Mark Twain",
+        "credit": "Internet Archive",
+        "width": 2808,
+        "height": 4062,
+        "attribution": "Mark Twain — via Wikimedia Commons, CC0"
+      },
+      "candidateCount": 16
+    },
+    {
+      "id": "gin-07",
+      "name": "Hapusa Himalayan Dry Gin",
+      "status": "no-candidate",
+      "chosen": {
+        "rejectReasons": []
+      },
+      "candidateCount": 0
+    },
+    {
+      "id": "gin-08",
+      "name": "Jaisalmer Indian Craft Gin",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Indian Army T-55 tank monument at Jaisalmer 2017.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Indian_Army_T-55_tank_monument_at_Jaisalmer_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Indian_Army_T-55_tank_monument_at_Jaisalmer_2017.jpg/960px-Indian_Army_T-55_tank_monument_at_Jaisalmer_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Indian_Army_T-55_tank_monument_at_Jaisalmer_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Indian_Army_T-55_tank_monument_at_Jaisalmer_2017.jpg",
+        "licenseResolved": "CC BY-SA 2.0",
+        "licenseTag": "CC BY-SA 2.0",
+        "artist": "Ashwin Kumar",
+        "credit": "https://www.flickr.com/photos/ashwinkumar/25142720987/",
+        "width": 4928,
+        "height": 3264,
+        "attribution": "Ashwin Kumar — via Wikimedia Commons, CC BY-SA 2.0"
+      },
+      "candidateCount": 7
+    },
+    {
+      "id": "gin-09",
+      "name": "Greater Than Blue",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:FACTORS INFLUENCING TIMELINES ON NON-COMPETITIVE ACQUISITIONS GREATER THAN $500 MILLION (IA factorsinfluenci1094563829).pdf",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/FACTORS_INFLUENCING_TIMELINES_ON_NON-COMPETITIVE_ACQUISITIONS_GREATER_THAN_%24500_MILLION_%28IA_factorsinfluenci1094563829%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/FACTORS_INFLUENCING_TIMELINES_ON_NON-COMPETITIVE_ACQUISITIONS_GREATER_THAN_%24500_MILLION_%28IA_factorsinfluenci1094563829%29.pdf/page1-960px-FACTORS_INFLUENCING_TIMELINES_ON_NON-COMPETITIVE_ACQUISITIONS_GREATER_THAN_%24500_MILLION_%28IA_factorsinfluenci1094563829%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/FACTORS_INFLUENCING_TIMELINES_ON_NON-COMPETITIVE_ACQUISITIONS_GREATER_THAN_%24500_MILLION_%28IA_factorsinfluenci1094563829%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:FACTORS_INFLUENCING_TIMELINES_ON_NON-COMPETITIVE_ACQUISITIONS_GREATER_THAN_$500_MILLION_(IA_factorsinfluenci1094563829).pdf",
+        "licenseResolved": "CC0",
+        "licenseTag": "Public domain",
+        "artist": "Chung, Ashley S. Feldman, Ashley P. Manuel, Shane R.",
+        "credit": "Internet Archive identifier: factorsinfluenci1094563829 https://archive.org/download/factorsinfluenci1094563829/factorsinfluenci1094563829.pdf",
+        "width": 1275,
+        "height": 1650,
+        "attribution": "Chung, Ashley S. Feldman, Ashley P. Manuel, Shane R. — via Wikimedia Commons, CC0"
+      },
+      "candidateCount": 18
+    },
+    {
+      "id": "gin-10",
+      "name": "Tanqueray No. Ten",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Bottles of Tanqueray London Dry Gin.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Bottles_of_Tanqueray_London_Dry_Gin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Bottles_of_Tanqueray_London_Dry_Gin.JPG/960px-Bottles_of_Tanqueray_London_Dry_Gin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Bottles_of_Tanqueray_London_Dry_Gin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Bottles_of_Tanqueray_London_Dry_Gin.JPG",
+        "licenseResolved": "CC BY-SA 3.0",
+        "licenseTag": "CC BY-SA 3.0",
+        "artist": "BrokenSphere",
+        "credit": "Own work",
+        "width": 4000,
+        "height": 3000,
+        "attribution": "BrokenSphere — via Wikimedia Commons, CC BY-SA 3.0"
+      },
+      "candidateCount": 18
+    },
+    {
+      "id": "gin-11",
+      "name": "Roku Gin",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Roku Gin.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Roku_Gin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Roku_Gin.jpg/960px-Roku_Gin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Roku_Gin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Roku_Gin.jpg",
+        "licenseResolved": "CC BY-SA 4.0",
+        "licenseTag": "CC BY-SA 4.0",
+        "artist": "JIP",
+        "credit": "Own work",
+        "width": 3456,
+        "height": 4608,
+        "attribution": "JIP — via Wikimedia Commons, CC BY-SA 4.0"
+      },
+      "candidateCount": 10
+    },
+    {
+      "id": "gin-12",
+      "name": "Hendrick's Gin",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Hendrick's Gin 1l.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Hendrick%27s_Gin_1l.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Hendrick%27s_Gin_1l.jpg/960px-Hendrick%27s_Gin_1l.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Hendrick%27s_Gin_1l.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Hendrick%27s_Gin_1l.jpg",
+        "licenseResolved": "CC BY-SA 3.0",
+        "licenseTag": "CC BY-SA 3.0",
+        "artist": "H005",
+        "credit": "Own work",
+        "width": 2623,
+        "height": 4205,
+        "attribution": "H005 — via Wikimedia Commons, CC BY-SA 3.0"
+      },
+      "candidateCount": 8
+    },
+    {
+      "id": "gin-13",
+      "name": "Malfy Con Limone",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Malfy con Limone.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Malfy_con_Limone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Malfy_con_Limone.jpg/960px-Malfy_con_Limone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/Malfy_con_Limone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Malfy_con_Limone.jpg",
+        "licenseResolved": "CC BY 2.0",
+        "licenseTag": "CC BY 2.0",
+        "artist": "Lachlan Hardy",
+        "credit": "https://www.flickr.com/photos/lachlanhardy/29804232803/",
+        "width": 1080,
+        "height": 1080,
+        "attribution": "Lachlan Hardy — via Wikimedia Commons, CC BY 2.0"
+      },
+      "candidateCount": 12
+    },
+    {
+      "id": "gin-14",
+      "name": "Monkey 47",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Monkey 47 - Schwarzwald Dry Gin - Packshot.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Monkey_47_-_Schwarzwald_Dry_Gin_-_Packshot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Monkey_47_-_Schwarzwald_Dry_Gin_-_Packshot.jpg/960px-Monkey_47_-_Schwarzwald_Dry_Gin_-_Packshot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Monkey_47_-_Schwarzwald_Dry_Gin_-_Packshot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Monkey_47_-_Schwarzwald_Dry_Gin_-_Packshot.jpg",
+        "licenseResolved": "CC BY-SA 4.0",
+        "licenseTag": "CC BY-SA 4.0",
+        "artist": "Grossmatthias1234",
+        "credit": "Own work",
+        "width": 4992,
+        "height": 6666,
+        "attribution": "Grossmatthias1234 — via Wikimedia Commons, CC BY-SA 4.0"
+      },
+      "candidateCount": 10
+    },
+    {
+      "id": "gin-15",
+      "name": "Bombay Sapphire Premier Cru",
+      "status": "eligible",
+      "chosen": {
+        "title": "File:Bombay sapphire bottles.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Bombay_sapphire_bottles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Bombay_sapphire_bottles.jpg/960px-Bombay_sapphire_bottles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Bombay_sapphire_bottles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Bombay_sapphire_bottles.jpg",
+        "licenseResolved": "CC BY 2.0",
+        "licenseTag": "CC BY 2.0",
+        "artist": "Jacob Munk-Stander from Copenhagen, Denmark",
+        "credit": "DSC06013 Uploaded by Smooth_O",
+        "width": 3264,
+        "height": 2448,
+        "attribution": "Jacob Munk-Stander from Copenhagen, Denmark — via Wikimedia Commons, CC BY 2.0"
+      },
+      "candidateCount": 13
+    }
+  ]
+}
