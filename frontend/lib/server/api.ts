@@ -251,7 +251,8 @@ async function chatReply(message: string): Promise<{ reply: string; recommendati
         body: JSON.stringify({
           model: process.env.GROQ_MODEL ?? 'openai/gpt-oss-120b',
           temperature: 0.4,
-          max_tokens: 700,
+          max_tokens: 1500,
+          reasoning_effort: 'low',
           messages: [
             { role: 'system', content: SYSTEM_PROMPT },
             { role: 'system', content: `CATALOG CONTEXT (in stock):\n${catalogContext(message)}` },
@@ -263,6 +264,7 @@ async function chatReply(message: string): Promise<{ reply: string; recommendati
       const data = await res.json();
       const raw: string = data?.choices?.[0]?.message?.content ?? '';
       const parsed = parseRecommendationIds(raw);
+      if (!parsed.text) throw new Error('empty model reply');
       replyText = parsed.text;
       modelIds = parsed.ids.length ? parsed.ids : namesToIds(parsed.text);
     } catch {
