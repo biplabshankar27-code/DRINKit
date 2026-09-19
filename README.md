@@ -90,13 +90,13 @@ Optional env: `NEXT_PUBLIC_API_URL=http://localhost:4000/api`, `NEXT_PUBLIC_WS_U
 
 ## Product images
 
-113 of 120 products use real product photos downloaded from Wikimedia Commons (CC0/CC BY/CC BY-SA) — see DRINKit-product-catalog/data/substitutions-plan.md and attribution/IMAGE-CREDITS.md for licensing. Remaining 7 product rows render branded placeholders until licensed assets are sourced. Images live in frontend/public/images (copyright/licensing respects Commons attribution rows in the manifest).
+113 of 120 products use real product photos downloaded from Wikimedia Commons (CC0/CC BY/CC BY-SA) ï¿½ licensing records live locally in the untracked frontend/product-catalog/ workspace (data/substitutions-plan.md, attribution/IMAGE-CREDITS.md). Remaining 7 product rows render branded placeholders until licensed assets are sourced. Images live in frontend/public/images (copyright/licensing respects Commons attribution rows in the manifest).
 
 ## Vercel-only deployment (JSON demo mode)
 
-The frontend ships a built-in API at /api/* (Next.js route handlers) backed by rontend/data/catalog.json plus in-memory demo state — **no external databases required**.
+The frontend ships a built-in API at /api/* (Next.js route handlers) backed by rontend/data/catalog.json plus in-memory demo state ï¿½ **no external databases required**.
 
 1. Import this repo on Vercel, set **Root Directory** to rontend.
 2. Environment variables:
-   - `GROQ_API_KEY` (console.groq.com) — optional, fallback engine works without it
+   - `GROQ_API_KEY` (console.groq.com) ï¿½ optional, fallback engine works without it
    - `GROQ_MODEL=openai/gpt-oss-120b`

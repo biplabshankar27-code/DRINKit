@@ -11,3 +11,6 @@ keys.txt
 
 dbs/
 backend/boot.log
+
+backend/
+frontend/product-catalog/
