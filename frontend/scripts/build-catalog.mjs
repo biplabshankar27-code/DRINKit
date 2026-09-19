@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));            // frontend/scripts
 const FRONTEND = path.join(ROOT, '..');                               // frontend
-const CATALOG = path.join(FRONTEND, '..', 'DRINKit-product-catalog', 'data', 'products.json');
+const CATALOG = path.join(FRONTEND, 'product-catalog', 'data', 'products.json');
 const IMAGES_DIR = path.join(FRONTEND, 'public', 'images');
 
 const raw = JSON.parse(fs.readFileSync(CATALOG, 'utf8'));

@@ -25,7 +25,7 @@ for (const row of manifest.products) {
 }
 fs.writeFileSync(path.join(ROOT, 'data/image-sources.json'), JSON.stringify(manifest, null, 2));
 // mirror into frontend/public/images
-const FE = path.join(ROOT, '../frontend/public/images');
+const FE = path.join(ROOT, '../public/images');
 let copied = 0;
 for (const row of manifest.products) {
   if (!row.verified || !row.local_file) continue;
